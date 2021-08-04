@@ -6,15 +6,18 @@ void myDisplay(void)
 {
 glClear (GL_COLOR_BUFFER_BIT);
 
+///sky block
+glColor3ub (219, 223, 226);
+glBegin(GL_QUADS);
+glVertex2i(0, 600);
+glVertex2i(0, 145);
+glVertex2i(1200, 145);
+glVertex2i(1200, 600);
+glEnd();
+
 
 glColor3ub (0,0,0);
 glBegin(GL_LINES);
-//-----------------
-    ///Ajran - Sky & BG
-    ///X(0 - 1200)
-    ///Y(145)
-//-----------------
-
 //-----------------
     ///Asraf - Building
     ///X(0 - 302)
