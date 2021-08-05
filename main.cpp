@@ -15,6 +15,7 @@ glVertex2i(1200, 145);
 glVertex2i(1200, 600);
 glEnd();
 
+//git test
 
 glColor3ub (0,0,0);
 glBegin(GL_LINES);
