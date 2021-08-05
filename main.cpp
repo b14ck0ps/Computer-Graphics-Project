@@ -30,6 +30,7 @@ glVertex2i(302, 0);
 glVertex2i(764, 600);
 glVertex2i(764, 0);
 //-----------------
+//getset
     ///Fariha - Building
     ///X(764 - 1200)
     ///Y(145)
