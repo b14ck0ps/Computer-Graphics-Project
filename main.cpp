@@ -26,6 +26,7 @@ glVertex2i(302, 0);
     ///Mahjabin - Building
     ///X(302 - 764)
     ///Y(145)
+    ///////////vvvvvvvvvv
 //-----------------
 glVertex2i(764, 600);
 glVertex2i(764, 0);
