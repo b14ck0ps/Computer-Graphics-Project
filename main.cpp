@@ -657,6 +657,76 @@ glEnd();
 
 ///end
 
+///Front Building 3
+glColor3ub (148, 179, 163);//main
+glBegin(GL_QUADS);
+glVertex2i(1116,170);
+glVertex2i(1172,170);
+glVertex2i(1172,426);
+glVertex2i(1116,426);
+glEnd();
+
+glColor3ub (117, 152, 135);//right_side
+glBegin(GL_QUADS);
+glVertex2i(1168,170);
+glVertex2i(1186,170);
+glVertex2i(1186,426);
+glVertex2i(1168,426);
+glEnd();
+
+glColor3ub (255, 255, 255);//main_window_white
+glBegin(GL_QUADS);
+glVertex2i(1122,278);
+glVertex2i(1163,278);
+glVertex2i(1163,418);
+glVertex2i(1122,418);
+glEnd();
+
+glColor3ub (148, 179, 163);
+glBegin(GL_LINES);//1V
+glVertex2i(1131,177);
+glVertex2i(1131,418);
+glEnd();
+
+glBegin(GL_LINES);//2V
+glVertex2i(1142,177);
+glVertex2i(1142,418);
+glEnd();
+
+glBegin(GL_LINES);//3V
+glVertex2i(1153,177);
+glVertex2i(1153,418);
+glEnd();
+
+glLineWidth(6.5);
+
+glBegin(GL_LINES);//1H
+glVertex2i(1122,390);
+glVertex2i(1163,390);
+glEnd();
+
+glBegin(GL_LINES);//2H
+glVertex2i(1122,362);
+glVertex2i(1163,362);
+glEnd();
+
+glBegin(GL_LINES);//3H
+glVertex2i(1122,334);
+glVertex2i(1163,334);
+glEnd();
+
+glBegin(GL_LINES);//4H
+glVertex2i(1122,306);
+glVertex2i(1163,306);
+glEnd();
+
+glBegin(GL_LINES);//4H
+glVertex2i(1122,278);
+glVertex2i(1163,278);
+glEnd();
+
+///end
+
 glColor3ub (0,0,0);
 glLineWidth(1);
 glBegin(GL_LINES);
