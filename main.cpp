@@ -15,7 +15,58 @@ glVertex2i(1200, 145);
 glVertex2i(1200, 600);
 glEnd();
 
-//git test
+///bg building 1
+
+glColor3ub (195, 203, 200);//top_stick!
+glBegin(GL_LINES);
+glVertex2i(164,350);
+glVertex2i(164,340);
+
+glVertex2i(174,360);
+glVertex2i(174,340);
+glEnd();
+
+glColor3ub (195, 203, 200);//top
+glBegin(GL_QUADS);
+glVertex2i(138,284);
+glVertex2i(179,284);
+glVertex2i(178,342);
+glVertex2i(138,340);
+glEnd();
+
+glColor3ub (195, 203, 200);//bottom
+glBegin(GL_QUADS);
+glVertex2i(124,170);
+glVertex2i(179,170);
+glVertex2i(179,284);
+glVertex2i(124,284);
+glEnd();
+
+glColor3ub (195, 203, 200);//right_side
+glBegin(GL_QUADS);
+glVertex2i(179,170);
+glVertex2i(186,170);
+glVertex2i(186,276);
+glVertex2i(179,284);
+glEnd();
+
+glColor3ub (151, 163, 151);//bottom_shadow
+glBegin(GL_QUADS);
+glVertex2i(115,170);
+glVertex2i(124,170);
+glVertex2i(124,284);
+glVertex2i(115,284);
+glEnd();
+
+glColor3ub (151, 163, 151);//top_shadow
+glBegin(GL_QUADS);
+glVertex2i(129,284);
+glVertex2i(138,284);
+glVertex2i(138,342);
+glVertex2i(129,340);
+glEnd();
+///end
+
 
 glColor3ub (0,0,0);
 glBegin(GL_LINES);
