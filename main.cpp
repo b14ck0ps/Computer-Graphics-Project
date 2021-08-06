@@ -410,6 +410,40 @@ glVertex2i(840,300);
 glEnd();
 ///end
 
+///BG Building 8
+glColor3ub (195, 203, 200);//top_curve
+glBegin(GL_QUADS);
+glVertex2i(866,367);
+glVertex2i(910,367);
+glVertex2i(907,380);
+glVertex2i(868,380);
+glEnd();
+
+glColor3ub (195, 203, 200);//top
+glBegin(GL_QUADS);
+glVertex2i(866,355);
+glVertex2i(910,355);
+glVertex2i(910,367);
+glVertex2i(866,367);
+glEnd();
+
+glColor3ub (195, 203, 200);//main_curve
+glBegin(GL_QUADS);
+glVertex2i(862,351);
+glVertex2i(913,351);
+glVertex2i(910,355);
+glVertex2i(866,355);
+glEnd();
+
+glColor3ub (195, 203, 200);//main
+glBegin(GL_QUADS);
+glVertex2i(862,170);
+glVertex2i(913,170);
+glVertex2i(913,351);
+glVertex2i(862,351);
+glEnd();
+///end
+
 glColor3ub (0,0,0);
 glBegin(GL_LINES);
 //-----------------
