@@ -504,7 +504,81 @@ glVertex2i(1060,300);
 glEnd();
 ///end
 
+///Front Building - 1
+glColor3ub (117, 152, 135);//right_side
+glBegin(GL_QUADS);
+glVertex2i(41,170);
+glVertex2i(53,170);
+glVertex2i(53,314);
+glVertex2i(41,314);
+glEnd();
+
+glColor3ub (148, 179, 163);//main
+glBegin(GL_QUADS);
+glVertex2i(53,170);
+glVertex2i(94,170);
+glVertex2i(94,314);
+glVertex2i(53,314);
+glEnd();
+
+glColor3ub (255, 255, 255);//main_window_white
+glBegin(GL_QUADS);
+glVertex2i(59,175);
+glVertex2i(89,175);
+glVertex2i(89,309);
+glVertex2i(59,309);
+glEnd();
+
+glLineWidth(3);//main_window_grill
+glColor3ub (148, 179, 163);
+glBegin(GL_LINES);//1V
+glVertex2i(66,309);
+glVertex2i(66,175);
+glEnd();
+
+glBegin(GL_LINES);//2V
+glVertex2i(75,309);
+glVertex2i(75,175);
+glEnd();
+
+glBegin(GL_LINES);//3V
+glVertex2i(83,309);
+glVertex2i(83,175);
+glEnd();
+
+glBegin(GL_LINES);//1H
+glVertex2i(59,292);
+glVertex2i(89,292);
+glEnd();
+
+glBegin(GL_LINES);//2H
+glVertex2i(59,273);
+glVertex2i(89,273);
+glEnd();
+
+glBegin(GL_LINES);//3H
+glVertex2i(59,253);
+glVertex2i(89,253);
+glEnd();
+
+glBegin(GL_LINES);//4H
+glVertex2i(59,233);
+glVertex2i(89,233);
+glEnd();
+
+glBegin(GL_LINES);//5H
+glVertex2i(59,213);
+glVertex2i(89,213);
+glEnd();
+
+glBegin(GL_LINES);//5H
+glVertex2i(59,193);
+glVertex2i(89,193);
+glEnd();
+///end
+
 glColor3ub (0,0,0);
+glLineWidth(1);
 glBegin(GL_LINES);
 //-----------------
     ///Asraf - Building
