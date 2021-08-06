@@ -727,6 +727,16 @@ glEnd();
 
 ///end
 
+///Green Field
+glColor3ub (169, 188, 60);
+glBegin(GL_QUADS);
+glVertex2i(0, 170);
+glVertex2i(0, 122);
+glVertex2i(1200, 122);
+glVertex2i(1200, 170);
+glEnd();
+///end
+
 glColor3ub (0,0,0);
 glLineWidth(1);
 glBegin(GL_LINES);
@@ -751,8 +761,8 @@ glVertex2i(764, 0);
 //-----------------
 
 ///Road Junaedasif
-glVertex2i(0, 145);
-glVertex2i(1200, 145);
+glVertex2i(0, 122);
+glVertex2i(1200, 122);
 glEnd();
 
 
