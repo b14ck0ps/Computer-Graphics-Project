@@ -376,6 +376,40 @@ glVertex2i(768,345);
 glVertex2i(762,350);
 glEnd();
 ///end
+
+///BG Building 7
+glColor3ub (195, 203, 200);//stick
+glLineWidth(1);
+glBegin(GL_LINES);
+glVertex2i(821,380);
+glVertex2i(821,340);
+glEnd();
+
+glColor3ub (195, 203, 200);//main
+glBegin(GL_QUADS);
+glVertex2i(779,170);
+glVertex2i(828,170);
+glVertex2i(828,348);
+glVertex2i(776,317);
+glEnd();
+
+glColor3ub (195, 203, 200);//right_1
+glBegin(GL_QUADS);
+glVertex2i(828,170);
+glVertex2i(840,170);
+glVertex2i(840,306);
+glVertex2i(828,306);
+glEnd();
+
+glColor3ub (195, 203, 200);//right_2
+glBegin(GL_QUADS);
+glVertex2i(840,170);
+glVertex2i(853,170);
+glVertex2i(853,300);
+glVertex2i(840,300);
+glEnd();
+///end
+
 glColor3ub (0,0,0);
 glBegin(GL_LINES);
 //-----------------
