@@ -477,12 +477,30 @@ glVertex2i(996,285);
 glVertex2i(990,290);
 glEnd();
 
-glColor3ub (195, 203, 200);//main
+glColor3ub (195, 203, 200);//right_2
 glBegin(GL_QUADS);
 glVertex2i(996,170);
 glVertex2i(1008,170);
 glVertex2i(1008,255);
 glVertex2i(996,255);
+glEnd();
+///end
+
+///BG Building 10
+glColor3ub (195, 203, 200);//main_curve
+glBegin(GL_QUADS);
+glVertex2i(1060,300);
+glVertex2i(1110,300);
+glVertex2i(1105,305);
+glVertex2i(1065,305);
+glEnd();
+
+glColor3ub (195, 203, 200);//main
+glBegin(GL_QUADS);
+glVertex2i(1060,170);
+glVertex2i(1110,170);
+glVertex2i(1110,300);
+glVertex2i(1060,300);
 glEnd();
 ///end
 
