@@ -36,3 +36,6 @@
 /obj
 *.depend
 *.layout
+
+#vscode
+.vscode
