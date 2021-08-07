@@ -765,6 +765,26 @@ glVertex2i(0, 122);
 glVertex2i(1200, 122);
 glEnd();
 
+///Road 
+glColor3ub (254, 206, 8);
+glBegin(GL_QUADS);
+glVertex2i(0,0);
+glVertex2i(1200,0);
+glVertex2i(1200,122);
+glVertex2i(0,122);
+glEnd();
+
+// road_strip
+glLineWidth(5);
+glLineStipple(10, 0xAAAA);
+glEnable(GL_LINE_STIPPLE);
+glColor3ub (255, 255, 255);
+glBegin(GL_LINES);
+glVertex2i(0,58);
+glVertex2i(1190,58);
+glEnd();
+
+///end
 
 
 glFlush ();
