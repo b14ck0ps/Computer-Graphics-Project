@@ -3641,119 +3641,6 @@ glVertex2i(750,170);
 glVertex2i(750,160);
 glEnd();
 //Road to Fariha
-//1st building.
-glBegin(GL_QUADS);//red part b1
-glPointSize(10.0);
-glColor3ub (163,76,63);
-glVertex2i(774, 147);
-glVertex2i(790, 147);
-glVertex2i(790, 242);
-glVertex2i(774, 242);
-glEnd();
-// border
-glBegin(GL_LINES);
-glLineWidth(04);
-glColor3ub (114,149,125);
-glVertex2i(777,146);
-glVertex2i(777,242);
-glEnd();
-glBegin(GL_LINES);
-glLineWidth(04);
-glColor3ub (114,149,125);
-glVertex2i(782,146);
-glVertex2i(782,242);
-glEnd();
-glBegin(GL_LINES);
-glLineWidth(04);
-glColor3ub (114,149,125);
-glVertex2i(789,146);
-glVertex2i(789,242);
-glEnd();
-
-
-glBegin(GL_QUADS);//white part b1
-glPointSize(10.0);
-glColor3ub (244,237,215);
-glVertex2i(790, 147);
-glVertex2i(863, 147);
-glVertex2i(863, 242);
-glVertex2i(790, 242);
-glEnd();
-glBegin(GL_QUADS);//w1 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(800, 217);
-glVertex2i(813, 217);
-glVertex2i(813, 232);
-glVertex2i(800, 232);
-glEnd();
-
-
-glBegin(GL_QUADS);//w2 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(820, 217);
-glVertex2i(833, 217);
-glVertex2i(833, 232);
-glVertex2i(820, 232);
-glEnd();
-glBegin(GL_QUADS);//w3 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(840, 217);
-glVertex2i(853, 217);
-glVertex2i(853, 232);
-glVertex2i(840, 232);
-glEnd();
-glBegin(GL_QUADS);//w4 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(800, 188);
-glVertex2i(813, 188);
-glVertex2i(813, 203);
-glVertex2i(800, 203);
-glEnd();
-glBegin(GL_QUADS);//w5 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(820, 188);
-glVertex2i(833, 188);
-glVertex2i(833, 203);
-glVertex2i(820, 203);
-glEnd();
-glBegin(GL_QUADS);//w6 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(840, 188);
-glVertex2i(853, 188);
-glVertex2i(853, 203);
-glVertex2i(840, 203);
-glEnd();
-
-glBegin(GL_QUADS);//w7 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(800, 159);
-glVertex2i(813, 159);
-glVertex2i(813, 174);
-glVertex2i(800, 174);
-glEnd();
-glBegin(GL_QUADS);//w8 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(820, 159);
-glVertex2i(833, 159);
-glVertex2i(833, 174);
-glVertex2i(820, 174);
-glEnd();
-glBegin(GL_QUADS);//w9 b1
-glPointSize(10.0);
-glColor3ub (187,211,188);
-glVertex2i(840, 159);
-glVertex2i(853, 159);
-glVertex2i(853, 174);
-glVertex2i(840, 174);
-glEnd();
 //2nd building
 glBegin(GL_QUADS);//red1 b2
 glPointSize(10.0);
@@ -3887,6 +3774,120 @@ glLineWidth(10);
 glColor3ub (184,218,194);
 glVertex2i(867,204);
 glVertex2i(923,204);
+glEnd();
+
+//1st building.
+glBegin(GL_QUADS);//red part b1
+glPointSize(10.0);
+glColor3ub (163,76,63);
+glVertex2i(774, 147);
+glVertex2i(790, 147);
+glVertex2i(790, 242);
+glVertex2i(774, 242);
+glEnd();
+// border
+glLineWidth(1);
+glBegin(GL_LINES);
+glColor3ub (114,149,125);
+glVertex2i(777,146);
+glVertex2i(777,242);
+glEnd();
+glBegin(GL_LINES);
+glLineWidth(04);
+glColor3ub (114,149,125);
+glVertex2i(782,146);
+glVertex2i(782,242);
+glEnd();
+glBegin(GL_LINES);
+glLineWidth(04);
+glColor3ub (114,149,125);
+glVertex2i(789,146);
+glVertex2i(789,242);
+glEnd();
+
+
+glBegin(GL_QUADS);//white part b1
+glPointSize(10.0);
+glColor3ub (244,237,215);
+glVertex2i(790, 147);
+glVertex2i(863, 147);
+glVertex2i(863, 242);
+glVertex2i(790, 242);
+glEnd();
+glBegin(GL_QUADS);//w1 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(800, 217);
+glVertex2i(813, 217);
+glVertex2i(813, 232);
+glVertex2i(800, 232);
+glEnd();
+
+
+glBegin(GL_QUADS);//w2 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(820, 217);
+glVertex2i(833, 217);
+glVertex2i(833, 232);
+glVertex2i(820, 232);
+glEnd();
+glBegin(GL_QUADS);//w3 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(840, 217);
+glVertex2i(853, 217);
+glVertex2i(853, 232);
+glVertex2i(840, 232);
+glEnd();
+glBegin(GL_QUADS);//w4 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(800, 188);
+glVertex2i(813, 188);
+glVertex2i(813, 203);
+glVertex2i(800, 203);
+glEnd();
+glBegin(GL_QUADS);//w5 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(820, 188);
+glVertex2i(833, 188);
+glVertex2i(833, 203);
+glVertex2i(820, 203);
+glEnd();
+glBegin(GL_QUADS);//w6 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(840, 188);
+glVertex2i(853, 188);
+glVertex2i(853, 203);
+glVertex2i(840, 203);
+glEnd();
+
+glBegin(GL_QUADS);//w7 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(800, 159);
+glVertex2i(813, 159);
+glVertex2i(813, 174);
+glVertex2i(800, 174);
+glEnd();
+glBegin(GL_QUADS);//w8 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(820, 159);
+glVertex2i(833, 159);
+glVertex2i(833, 174);
+glVertex2i(820, 174);
+glEnd();
+glBegin(GL_QUADS);//w9 b1
+glPointSize(10.0);
+glColor3ub (187,211,188);
+glVertex2i(840, 159);
+glVertex2i(853, 159);
+glVertex2i(853, 174);
+glVertex2i(840, 174);
 glEnd();
 
 //3rd building
