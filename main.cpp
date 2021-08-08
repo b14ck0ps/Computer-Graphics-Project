@@ -737,35 +737,6 @@ glVertex2i(1200, 170);
 glEnd();
 ///end
 
-glColor3ub (0,0,0);
-glLineWidth(1);
-glBegin(GL_LINES);
-//-----------------
-    ///Asraf - Building
-    ///X(0 - 302)
-    ///Y(145)
-//-----------------
-glVertex2i(302, 600);
-glVertex2i(302, 0);
-//-----------------
-    ///Mahjabin - Building
-    ///X(302 - 764)
-    ///Y(145)
-//-----------------
-glVertex2i(764, 600);
-glVertex2i(764, 0);
-//-----------------
-//getset
-    ///Fariha - Building
-    ///X(764 - 1200)
-    ///Y(145)
-//-----------------
-
-///Road Junaedasif
-glVertex2i(0, 122);
-glVertex2i(1200, 122);
-glEnd();
-
 ///Road
 glColor3ub (254, 206, 8);
 glBegin(GL_QUADS);
