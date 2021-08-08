@@ -774,6 +774,17 @@ glVertex2i(1200,122);
 glVertex2i(0,122);
 glEnd();
 
+glPushAttrib(GL_ENABLE_BIT);
+glLineWidth(5);// road_strip
+glLineStipple(10, 0xAAAA);
+glEnable(GL_LINE_STIPPLE);
+glColor3ub (255, 255, 255);
+glBegin(GL_LINES);
+glVertex2i(0,58);
+glVertex2i(1190,58);
+glEnd();
+glPopAttrib();
+
 ///end
 glBegin(GL_QUADS);
 glPointSize(10.0);
@@ -3627,16 +3638,6 @@ glVertex2i(745,165);
 glVertex2i(755,165);
 glVertex2i(750,170);
 glVertex2i(750,160);
-glEnd();
-
-// road_strip
-glLineWidth(5);
-glLineStipple(10, 0xAAAA);
-glEnable(GL_LINE_STIPPLE);
-glColor3ub (255, 255, 255);
-glBegin(GL_LINES);
-glVertex2i(0,58);
-glVertex2i(1190,58);
 glEnd();
 
 glFlush ();
