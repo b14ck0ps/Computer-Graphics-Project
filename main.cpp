@@ -784,14 +784,6 @@ void DayTime()
     glVertex2i(400, 245);
     glVertex2i(397, 250);
     glVertex2i(306, 250);
-    //yellow building
-    glBegin(GL_QUADS);
-    glPointSize(10.0);
-    glColor3ub(251, 185, 23);
-    glVertex2i(0, 145);
-    glVertex2i(20, 145);
-    glVertex2i(20, 260);
-    glVertex2i(0, 260);
     glEnd();
 
     glBegin(GL_QUADS);
@@ -899,6 +891,17 @@ void DayTime()
     glVertex2i(355, 205);
     glEnd();
     ///---------------------Asraf-----------------------///
+    //yellow building
+    glBegin(GL_QUADS);
+    glPointSize(10.0);
+    glColor3ub(251, 185, 23);
+    glVertex2i(0, 145);
+    glVertex2i(20, 145);
+    glVertex2i(20, 260);
+    glVertex2i(0, 260);
+    glEnd();
+    
+    glBegin(GL_QUADS); //1st Building Top bar
     glColor3ub(65, 51, 0);
     glVertex2i(0, 260);
     glVertex2i(20, 260);
@@ -4344,15 +4347,6 @@ void NightTime()
     glVertex2i(400, 245);
     glVertex2i(397, 250);
     glVertex2i(306, 250);
-    //yellow building
-    glBegin(GL_QUADS);
-    glPointSize(10.0);
-    glColor3ub(251, 185, 23);
-    glVertex2i(0, 145);
-    glVertex2i(20, 145);
-    glVertex2i(20, 260);
-    glVertex2i(0, 260);
-    glEnd();
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
@@ -4459,6 +4453,17 @@ void NightTime()
     glVertex2i(355, 205);
     glEnd();
     ///---------------------Asraf-----------------------///
+    //yellow building
+    glBegin(GL_QUADS);
+    glPointSize(10.0);
+    glColor3ub(251, 185, 23);
+    glVertex2i(0, 145);
+    glVertex2i(20, 145);
+    glVertex2i(20, 260);
+    glVertex2i(0, 260);
+    glEnd();
+
+    glBegin(GL_QUADS);
     glColor3ub(65, 51, 0);
     glVertex2i(0, 260);
     glVertex2i(20, 260);
