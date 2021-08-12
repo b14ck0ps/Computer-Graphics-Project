@@ -5,7 +5,7 @@
 void myDisplay(void)
 {
 glClear (GL_COLOR_BUFFER_BIT);
-
+///---------------------Ajran-----------------------///
 ///sky block
 glColor3ub (219, 223, 226);
 glBegin(GL_QUADS);
@@ -892,7 +892,8 @@ glVertex2i(355, 185);
 glVertex2i(370, 185);
 glVertex2i(370, 205);
 glVertex2i(355, 205);
-
+glEnd();
+///---------------------Asraf-----------------------///
 glColor3ub (65,51,0);
 glVertex2i(0, 260);
 glVertex2i(20, 260);
@@ -1999,7 +2000,7 @@ glVertex2i(96, 170);
 glVertex2i(91, 170);
 
 glEnd();
-
+///---------------------Mahjabin-----------------------///
 glBegin(GL_LINES);
 glColor3ub (0,0,0);
 glVertex2i(355,200);
@@ -3604,7 +3605,7 @@ glVertex2i(755,165);
 glVertex2i(750,170);
 glVertex2i(750,160);
 glEnd();
-//Road to Fariha
+///---------------------Fariha-----------------------///
 //2nd building
 glBegin(GL_QUADS);//red1 b2
 glPointSize(10.0);
