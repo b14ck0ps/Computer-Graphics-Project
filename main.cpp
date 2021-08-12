@@ -653,8 +653,6 @@ void BgBuilding()
     glVertex2i(615, 221);
     glEnd();
 
-    glEnd();
-
     ///end
 
     ///Front Building 3
@@ -900,7 +898,7 @@ void DayTime()
     glVertex2i(20, 260);
     glVertex2i(0, 260);
     glEnd();
-    
+
     glBegin(GL_QUADS); //1st Building Top bar
     glColor3ub(65, 51, 0);
     glVertex2i(0, 260);
