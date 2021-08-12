@@ -758,15 +758,8 @@ glEnd();
 glPopAttrib();
 
 ///end
-glBegin(GL_QUADS);
-glPointSize(10.0);
-glColor3ub (172,188,65);
-glVertex2i(0, 120);
-glVertex2i(1200, 120);
-glVertex2i(1200, 185);
-glVertex2i(0, 185);
-glEnd();
 
+///---------------------Mahjabin-----------------------///
 
 //1st building
 
