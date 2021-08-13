@@ -6684,7 +6684,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(245, 94, 55);
+    glColor3ub(6, 92, 119);
     glVertex2i(705, 145);
     glVertex2i(765, 145);
     glVertex2i(765, 270);
@@ -6693,7 +6693,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(58, 81, 76);
+    glColor3ub(16, 15, 16);
     glVertex2i(695, 145);
     glVertex2i(705, 145);
     glVertex2i(705, 270);
@@ -6702,7 +6702,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 250);
     glVertex2i(730, 250);
     glVertex2i(730, 260);
@@ -6711,7 +6711,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 255);
     glVertex2i(730, 255);
     glVertex2i(725, 260);
@@ -6720,7 +6720,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 250);
     glVertex2i(743, 250);
     glVertex2i(743, 260);
@@ -6729,7 +6729,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 255);
     glVertex2i(743, 255);
     glVertex2i(738, 260);
@@ -6738,7 +6738,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 250);
     glVertex2i(755, 250);
     glVertex2i(755, 260);
@@ -6747,7 +6747,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 255);
     glVertex2i(755, 255);
     glVertex2i(750, 260);
@@ -6756,7 +6756,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 235);
     glVertex2i(730, 235);
     glVertex2i(730, 245);
@@ -6765,7 +6765,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 240);
     glVertex2i(730, 240);
     glVertex2i(725, 245);
@@ -6774,7 +6774,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(720, 220);
     glVertex2i(730, 220);
     glVertex2i(730, 230);
@@ -6783,7 +6783,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(720, 225);
     glVertex2i(730, 225);
     glVertex2i(725, 230);
@@ -6792,7 +6792,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(720, 205);
     glVertex2i(730, 205);
     glVertex2i(730, 215);
@@ -6801,7 +6801,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(720, 210);
     glVertex2i(730, 210);
     glVertex2i(725, 215);
@@ -6810,7 +6810,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(720, 190);
     glVertex2i(730, 190);
     glVertex2i(730, 200);
@@ -6819,7 +6819,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(720, 195);
     glVertex2i(730, 195);
     glVertex2i(725, 200);
@@ -6828,7 +6828,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 175);
     glVertex2i(730, 175);
     glVertex2i(730, 185);
@@ -6837,7 +6837,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 180);
     glVertex2i(730, 180);
     glVertex2i(725, 185);
@@ -6846,7 +6846,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 160);
     glVertex2i(730, 160);
     glVertex2i(730, 170);
@@ -6855,7 +6855,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(720, 165);
     glVertex2i(730, 165);
     glVertex2i(725, 170);
@@ -6865,7 +6865,7 @@ void NightTime()
     //2nd
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 235);
     glVertex2i(743, 235);
     glVertex2i(743, 245);
@@ -6874,7 +6874,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 240);
     glVertex2i(743, 240);
     glVertex2i(738, 245);
@@ -6883,7 +6883,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 220);
     glVertex2i(743, 220);
     glVertex2i(743, 230);
@@ -6892,7 +6892,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 225);
     glVertex2i(743, 225);
     glVertex2i(738, 230);
@@ -6901,7 +6901,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(733, 205);
     glVertex2i(743, 205);
     glVertex2i(743, 215);
@@ -6910,7 +6910,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(733, 210);
     glVertex2i(743, 210);
     glVertex2i(738, 215);
@@ -6919,7 +6919,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 190);
     glVertex2i(743, 190);
     glVertex2i(743, 200);
@@ -6928,7 +6928,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 195);
     glVertex2i(743, 195);
     glVertex2i(738, 200);
@@ -6937,7 +6937,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(733, 175);
     glVertex2i(743, 175);
     glVertex2i(743, 185);
@@ -6946,7 +6946,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(733, 180);
     glVertex2i(743, 180);
     glVertex2i(738, 185);
@@ -6955,7 +6955,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 160);
     glVertex2i(743, 160);
     glVertex2i(743, 170);
@@ -6964,7 +6964,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(733, 165);
     glVertex2i(743, 165);
     glVertex2i(738, 170);
@@ -6974,7 +6974,7 @@ void NightTime()
     //3rd
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 235);
     glVertex2i(755, 235);
     glVertex2i(755, 245);
@@ -6983,7 +6983,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 240);
     glVertex2i(755, 240);
     glVertex2i(750, 245);
@@ -6992,7 +6992,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(745, 220);
     glVertex2i(755, 220);
     glVertex2i(755, 230);
@@ -7001,7 +7001,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(745, 225);
     glVertex2i(755, 225);
     glVertex2i(750, 230);
@@ -7010,7 +7010,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 205);
     glVertex2i(755, 205);
     glVertex2i(755, 215);
@@ -7019,7 +7019,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 210);
     glVertex2i(755, 210);
     glVertex2i(750, 215);
@@ -7028,7 +7028,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(745, 190);
     glVertex2i(755, 190);
     glVertex2i(755, 200);
@@ -7037,7 +7037,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(745, 195);
     glVertex2i(755, 195);
     glVertex2i(750, 200);
@@ -7046,7 +7046,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(246, 184, 10);
     glVertex2i(745, 175);
     glVertex2i(755, 175);
     glVertex2i(755, 185);
@@ -7055,7 +7055,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(246, 184, 10);
     glVertex2i(745, 180);
     glVertex2i(755, 180);
     glVertex2i(750, 185);
@@ -7064,7 +7064,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(157, 203, 178);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 160);
     glVertex2i(755, 160);
     glVertex2i(755, 170);
@@ -7073,7 +7073,7 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(104, 135, 118);
+    glColor3ub(9, 38, 58);
     glVertex2i(745, 165);
     glVertex2i(755, 165);
     glVertex2i(750, 170);
