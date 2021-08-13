@@ -5762,61 +5762,61 @@ void NightTime()
     glVertex2i(435, 259);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///7th window
     glPointSize(10.0);
-    glColor3ub(255, 253, 241);
+    glColor3ub(5, 45, 74);
     glVertex2i(435, 220);
     glVertex2i(445, 220);
     glVertex2i(445, 230);
     glVertex2i(435, 230);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///7th window bar
     glPointSize(10.0);
-    glColor3ub(0, 0, 0);
+    glColor3ub(206, 140, 77);
     glVertex2i(435, 231);
     glVertex2i(445, 231);
     glVertex2i(445, 233);
     glVertex2i(435, 233);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///8th window
     glPointSize(10.0);
-    glColor3ub(255, 253, 241);
+    glColor3ub(5, 45, 74);
     glVertex2i(450, 220);
     glVertex2i(460, 220);
     glVertex2i(460, 230);
     glVertex2i(450, 230);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///8th window bar
     glPointSize(10.0);
-    glColor3ub(0, 0, 0);
+    glColor3ub(206, 140, 77);
     glVertex2i(450, 231);
     glVertex2i(460, 231);
     glVertex2i(460, 233);
     glVertex2i(450, 233);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///9th window
     glPointSize(10.0);
-    glColor3ub(255, 253, 241);
+    glColor3ub(5, 45, 74);
     glVertex2i(465, 220);
     glVertex2i(475, 220);
     glVertex2i(475, 230);
     glVertex2i(465, 230);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///9th window bar
     glPointSize(10.0);
-    glColor3ub(0, 0, 0);
+    glColor3ub(206, 140, 77);
     glVertex2i(465, 231);
     glVertex2i(475, 231);
     glVertex2i(475, 233);
     glVertex2i(465, 233);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///3rd bottom bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(450, 214);
@@ -5825,25 +5825,25 @@ void NightTime()
     glVertex2i(450, 217);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///10th window
     glPointSize(10.0);
-    glColor3ub(255, 253, 241);
+    glColor3ub(5, 45, 74);
     glVertex2i(465, 175);
     glVertex2i(475, 175);
     glVertex2i(475, 185);
     glVertex2i(465, 185);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///10th window bar
     glPointSize(10.0);
-    glColor3ub(0, 0, 0);
+    glColor3ub(206, 140, 77);
     glVertex2i(465, 186);
     glVertex2i(475, 186);
     glVertex2i(475, 188);
     glVertex2i(465, 188);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///last bottom bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(455, 170);
@@ -5854,43 +5854,43 @@ void NightTime()
 
     //3rd building
 
-    glBegin(GL_TRIANGLES);
+    glBegin(GL_TRIANGLES);///left triangle
     glPointSize(10.0);
-    glColor3ub(79, 143, 128);
+    glColor3ub(9, 43, 72);
     glVertex2i(492, 280);
     glVertex2i(540, 280);
     glVertex2i(535, 312);
     glEnd();
 
-    glBegin(GL_TRIANGLES);
+    glBegin(GL_TRIANGLES);///right trio
     glPointSize(10.0);
-    glColor3ub(137, 180, 170);
+    glColor3ub(108, 181, 224);
     glVertex2i(540, 280);
     glVertex2i(580, 280);
     glVertex2i(535, 312);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///left body
     glPointSize(10.0);
-    glColor3ub(43, 141, 128);
+    glColor3ub(12, 46, 80);
     glVertex2i(495, 145);
     glVertex2i(540, 145);
     glVertex2i(540, 280);
     glVertex2i(495, 280);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///right body
     glPointSize(10.0);
-    glColor3ub(184, 217, 212);
+    glColor3ub(7, 134, 181);
     glVertex2i(540, 145);
     glVertex2i(580, 145);
     glVertex2i(580, 280);
     glVertex2i(540, 280);
     glEnd();
 
-    glBegin(GL_QUADS);
+    glBegin(GL_QUADS);///left inB
     glPointSize(10.0);
-    glColor3ub(196, 231, 210);
+    glColor3ub(12, 46, 80);
     glVertex2i(500, 170);
     glVertex2i(535, 170);
     glVertex2i(535, 275);
@@ -5964,11 +5964,11 @@ void NightTime()
     glVertex2i(535, 170);
     glEnd(); //11
 
-    glBegin(GL_LINES);
+    /*glBegin(GL_LINES);
     glColor3ub(46, 142, 130);
     glVertex2i(495, 160);
     glVertex2i(535, 160);
-    glEnd(); //12
+    glEnd(); //12*/
 
     glBegin(GL_LINES);
     glColor3ub(46, 142, 130);
