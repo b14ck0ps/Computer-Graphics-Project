@@ -2,10 +2,16 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <math.h>
+#include <iostream>
 float CloudX = 0;
 float CloudY = 0;
 
+float sunX = 0;
+float sunY = 0;
+
 bool isDay = true;
+
+bool makeItNight = false;
 
 void DrawCircle(float cx, float cy, float r, int num_segments)
 {
@@ -48,9 +54,10 @@ void Nightsky()
     glVertex2i(1200, 600);
     glEnd();
 }
-void sun(){
+void sun()
+{
     glColor3f(3.0, 1.0, 0.5);
-    DrawCircle(805,546,50,2000);
+    DrawCircle(805, 546, 50, 2000);
 }
 struct cloud
 {
@@ -138,7 +145,7 @@ void moveCloud()
 
 {
 
-        CloudX += .3;
+    CloudX += .3;
 
     if (CloudX > 1200)
     {
@@ -156,6 +163,26 @@ void moveCloud()
         NightCloud();
     }
 
+    glPopMatrix();
+}
+void moveSun()
+
+{
+
+    if (makeItNight)
+    {
+        sunY -= .1;
+    }
+    //std::cout << "  " << sunY ;
+    if (sunY < - 425)
+    {
+        isDay = false;
+        sunY = 0;
+    }
+
+    glPushMatrix();
+    glTranslatef(sunX, sunY, 0);
+    sun();
     glPopMatrix();
 }
 void BgBuildingDayTime()
@@ -9095,7 +9122,7 @@ void keyboard(unsigned char key, int x, int y)
         isDay = true;
         break;
     case 'n':
-        isDay = false;
+        makeItNight = true;
         break;
 
     default:
@@ -9106,7 +9133,7 @@ void keyboard(unsigned char key, int x, int y)
 void Day()
 {
     Daysky();
-    sun();
+    moveSun();
     moveCloud();
     BgBuildingDayTime();
     RoadFieldDay();
@@ -9130,7 +9157,9 @@ void myDisplay(void)
     if (isDay)
     {
         Day();
-    }else{
+    }
+    else
+    {
         Night();
     }
 
