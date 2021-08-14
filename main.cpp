@@ -139,7 +139,7 @@ void moveCloud()
 
     if (CloudX > 1200)
     {
-        CloudX = -200;
+        CloudX = -1200;
     }
 
     glPushMatrix();
@@ -9129,7 +9129,7 @@ void myDisplay(void)
     }else{
         Night();
     }
-    
+
     glFlush();
     glutPostRedisplay();
     glutSwapBuffers();
