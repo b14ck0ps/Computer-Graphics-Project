@@ -48,7 +48,10 @@ void Nightsky()
     glVertex2i(1200, 600);
     glEnd();
 }
-
+void sun(){
+    glColor3f(3.0, 1.0, 0.5);
+    DrawCircle(805,546,50,2000);
+}
 struct cloud
 {
     void drawDayCloud()
@@ -9103,6 +9106,7 @@ void keyboard(unsigned char key, int x, int y)
 void Day()
 {
     Daysky();
+    sun();
     moveCloud();
     BgBuildingDayTime();
     RoadFieldDay();
