@@ -15,7 +15,9 @@ float moonY = 0;
 bool isDay = true;
 
 bool makeItNight = false;
-bool justSitThere = false;
+bool makeItDay = false;
+bool sunSitThere = false;
+bool moonSitThere = false;
 
 void DrawCircle(float cx, float cy, float r, int num_segments)
 {
@@ -60,8 +62,11 @@ void Nightsky()
 }
 void sun()
 {
+    glPushMatrix();
+    glTranslated(0, -300, 0);
     glColor3f(3.0, 1.0, 0.5);
     DrawCircle(805, 546, 50, 2000);
+    glPopMatrix();
 }
 void moon()
 {
@@ -179,6 +184,24 @@ void moveCloud()
 
     glPopMatrix();
 }
+void sunRise()
+
+{
+    if (!sunSitThere)
+    {
+        sunY += .1;
+        //std::cout << "  " << moonY;
+    }
+    if (sunY > 290)
+    {
+        //std::cout << "working!";
+        sunSitThere = true;
+    }
+    glPushMatrix();
+    glTranslatef(sunX, sunY, 0);
+    sun();
+    glPopMatrix();
+}
 void sunset()
 
 {
@@ -188,7 +211,7 @@ void sunset()
         sunY -= .1;
     }
     //std::cout << "  " << sunY ;
-    if (sunY < -425)
+    if (sunY < -125)
     {
         isDay = false;
         sunY = 0;
@@ -202,7 +225,7 @@ void sunset()
 void MoonRise()
 
 {
-    if (!justSitThere)
+    if (!moonSitThere)
     {
         moonY += .1;
         //std::cout << "  " << moonY;
@@ -210,10 +233,31 @@ void MoonRise()
     if (moonY > 290)
     {
         //std::cout << "working!";
-        justSitThere = true;
+        moonSitThere = true;
     }
     glPushMatrix();
-    glTranslatef(sunX, moonY, 0);
+    glTranslatef(moonX, moonY, 0);
+    moon();
+    glPopMatrix();
+}
+void moonset()
+
+{
+
+    if (makeItDay)
+    {
+        //std::cout << " clicked ";
+        moonY -= .1;
+    }
+    //std::cout << "  " << sunY ;
+    if (moonY < -100)
+    {
+        isDay = true;
+        moonY = 0;
+    }
+
+    glPushMatrix();
+    glTranslatef(moonX, moonY, 0);
     moon();
     glPopMatrix();
 }
@@ -9151,10 +9195,14 @@ void keyboard(unsigned char key, int x, int y)
     switch (key)
     {
     case 'd':
-        isDay = true;
+        makeItDay = true;
+        makeItNight = false;
+        sunSitThere = false;
         break;
     case 'n':
         makeItNight = true;
+        makeItDay = false;
+        moonSitThere = false;
         break;
 
     default:
@@ -9165,6 +9213,7 @@ void keyboard(unsigned char key, int x, int y)
 void Day()
 {
     Daysky();
+    sunRise();
     sunset();
     moveCloud();
     BgBuildingDayTime();
@@ -9177,6 +9226,7 @@ void Night()
 {
     Nightsky();
     MoonRise();
+    moonset();
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
