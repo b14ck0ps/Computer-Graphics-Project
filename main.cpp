@@ -59,6 +59,13 @@ void sun()
     glColor3f(3.0, 1.0, 0.5);
     DrawCircle(805, 546, 50, 2000);
 }
+void moon()
+{
+    glColor3f(3.0, 1.0, 0.5);
+    DrawCircle(972, 402, 30, 2000);
+    glColor3ub(0, 127, 179);
+    DrawCircle(960, 405, 30, 2000);
+}
 struct cloud
 {
     void drawDayCloud()
@@ -174,7 +181,7 @@ void moveSun()
         sunY -= .1;
     }
     //std::cout << "  " << sunY ;
-    if (sunY < - 425)
+    if (sunY < -425)
     {
         isDay = false;
         sunY = 0;
