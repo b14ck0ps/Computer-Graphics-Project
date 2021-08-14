@@ -1459,7 +1459,7 @@ void BgBuildingNightTime()
     ///end
 }
 
-void RoadField()
+void RoadFieldDay()
 {
     ///Green Field
     glColor3ub(169, 188, 60);
@@ -1493,7 +1493,40 @@ void RoadField()
 
     ///end
 }
+void RoadFielNight()
+{
+    ///Green Field
+    glColor3ub(9, 27, 32);
+    glBegin(GL_QUADS);
+    glVertex2i(0, 170);
+    glVertex2i(0, 122);
+    glVertex2i(1200, 122);
+    glVertex2i(1200, 170);
+    glEnd();
+    ///end
 
+    ///Road
+    glColor3ub(27, 66, 121);
+    glBegin(GL_QUADS);
+    glVertex2i(0, 0);
+    glVertex2i(1200, 0);
+    glVertex2i(1200, 122);
+    glVertex2i(0, 122);
+    glEnd();
+
+    glPushAttrib(GL_ENABLE_BIT);
+    glLineWidth(5); // road_strip
+    glLineStipple(10, 0xAAAA);
+    glEnable(GL_LINE_STIPPLE);
+    glColor3ub(6, 95, 138);
+    glBegin(GL_LINES);
+    glVertex2i(0, 58);
+    glVertex2i(1190, 58);
+    glEnd();
+    glPopAttrib();
+
+    ///end
+}
 void DayTime()
 {
     ///---------------------Mahjabin-----------------------///
@@ -8625,7 +8658,7 @@ void myDisplay(void)
     Nightsky();
     moveCloud();
     BgBuildingNightTime();
-    RoadField();
+    RoadFielNight();
     NightTime();
     glFlush();
     glutPostRedisplay();
