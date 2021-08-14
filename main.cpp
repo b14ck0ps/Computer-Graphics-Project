@@ -179,7 +179,7 @@ void moveCloud()
 
     glPopMatrix();
 }
-void moveSun()
+void sunset()
 
 {
 
@@ -205,7 +205,7 @@ void MoonRise()
     if (!justSitThere)
     {
         moonY += .1;
-        std::cout << "  " << moonY;
+        //std::cout << "  " << moonY;
     }
     if (moonY > 290)
     {
@@ -9165,7 +9165,7 @@ void keyboard(unsigned char key, int x, int y)
 void Day()
 {
     Daysky();
-    moveSun();
+    sunset();
     moveCloud();
     BgBuildingDayTime();
     RoadFieldDay();
