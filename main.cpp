@@ -1111,7 +1111,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 7
-    glColor3ub(5, 145, 193); //stick
+    glColor3ub(0, 114, 158); //stick
     glLineWidth(1);
     glBegin(GL_LINES);
     glVertex2i(821, 380);
@@ -1144,7 +1144,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 8
-    glColor3ub(5, 145, 193); //top_curve
+    glColor3ub(0, 114, 158); //top_curve
     glBegin(GL_QUADS);
     glVertex2i(866, 367);
     glVertex2i(910, 367);
@@ -1178,7 +1178,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 9
-    glColor3ub(5, 145, 193); //main_curve
+    glColor3ub(0, 114, 158); //main_curve
     glBegin(GL_QUADS);
     glVertex2i(945, 347);
     glVertex2i(990, 347);
@@ -1220,7 +1220,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 10
-    glColor3ub(5, 145, 193); //main_curve
+    glColor3ub(0, 114, 158); //main_curve
     glBegin(GL_QUADS);
     glVertex2i(1060, 300);
     glVertex2i(1110, 300);
