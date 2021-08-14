@@ -9,9 +9,13 @@ float CloudY = 0;
 float sunX = 0;
 float sunY = 0;
 
+float moonX = 0;
+float moonY = 0;
+
 bool isDay = true;
 
 bool makeItNight = false;
+bool justSitThere = false;
 
 void DrawCircle(float cx, float cy, float r, int num_segments)
 {
@@ -61,10 +65,13 @@ void sun()
 }
 void moon()
 {
+    glPushMatrix();
+    glTranslated(0, -200, 0);
     glColor3f(3.0, 1.0, 0.5);
     DrawCircle(972, 402, 30, 2000);
     glColor3ub(0, 127, 179);
     DrawCircle(960, 405, 30, 2000);
+    glPopMatrix();
 }
 struct cloud
 {
@@ -190,6 +197,24 @@ void moveSun()
     glPushMatrix();
     glTranslatef(sunX, sunY, 0);
     sun();
+    glPopMatrix();
+}
+void MoonRise()
+
+{
+    if (!justSitThere)
+    {
+        moonY += .1;
+        std::cout << "  " << moonY;
+    }
+    if (moonY > 290)
+    {
+        //std::cout << "working!";
+        justSitThere = true;
+    }
+    glPushMatrix();
+    glTranslatef(sunX, moonY, 0);
+    moon();
     glPopMatrix();
 }
 void BgBuildingDayTime()
@@ -9151,6 +9176,7 @@ void Day()
 void Night()
 {
     Nightsky();
+    MoonRise();
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
