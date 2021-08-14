@@ -21,11 +21,24 @@ void DrawCircle(float cx, float cy, float r, int num_segments)
     glEnd();
 }
 
-void sky()
+void Daysky()
 {
     ///---------------------Ajran-----------------------///
     ///sky block
     glColor3ub(219, 223, 226);
+    glBegin(GL_QUADS);
+    glVertex2i(0, 600);
+    glVertex2i(0, 145);
+    glVertex2i(1200, 145);
+    glVertex2i(1200, 600);
+    glEnd();
+}
+
+void Nightsky()
+{
+
+    ///sky block
+    glColor3ub(0, 127, 179);
     glBegin(GL_QUADS);
     glVertex2i(0, 600);
     glVertex2i(0, 145);
@@ -8570,7 +8583,7 @@ void NightTime()
 void myDisplay(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    sky();
+    Nightsky();
     moveCloud();
     BgBuildingNightTime();
     RoadField();
