@@ -49,7 +49,7 @@ void Nightsky()
 
 struct cloud
 {
-    void drawCloud()
+    void drawDayCloud()
     {
         glColor3f(1.0, 1.0, 1.0);
         DrawCircle(246, 486, 23, 2000); //1
@@ -63,30 +63,69 @@ struct cloud
         glVertex2i(350, 480);
         glEnd();
     }
+     void drawNightCloud()
+    {
+        glColor3ub(36, 138, 197);
+        DrawCircle(246, 486, 23, 2000); //1
+        DrawCircle(290, 509, 40, 2000); //2
+        DrawCircle(350, 494, 36, 2000); //3
+        glColor3ub(36, 138, 197);
+        glBegin(GL_QUADS);
+        glVertex2i(246, 480);
+        glVertex2i(246, 463);
+        glVertex2i(350, 459);
+        glVertex2i(350, 480);
+        glEnd();
+    }
 };
 
-void Cloud()
+void DayCloud()
 {
     cloud c;
     //cloud 1
     glPushMatrix();
     glTranslated(300, -50, 0);
-    c.drawCloud();
+    c.drawDayCloud();
     glPopMatrix();
     //cloud 2
     glPushMatrix();
     glTranslated(-150, 0, 0);
-    c.drawCloud();
+    c.drawDayCloud();
     glPopMatrix();
     //cloud 3
     glPushMatrix();
     glTranslated(200, 50, 0);
-    c.drawCloud();
+    c.drawDayCloud();
     glPopMatrix();
     //cloud 4
     glPushMatrix();
     glTranslated(600, -100, 0);
-    c.drawCloud();
+    c.drawDayCloud();
+    glPopMatrix();
+}
+
+void NightCloud()
+{
+    cloud c;
+    //cloud 1
+    glPushMatrix();
+    glTranslated(300, -50, 0);
+    c.drawNightCloud();
+    glPopMatrix();
+    //cloud 2
+    glPushMatrix();
+    glTranslated(-150, 0, 0);
+    c.drawNightCloud();
+    glPopMatrix();
+    //cloud 3
+    glPushMatrix();
+    glTranslated(200, 50, 0);
+    c.drawNightCloud();
+    glPopMatrix();
+    //cloud 4
+    glPushMatrix();
+    glTranslated(600, -100, 0);
+    c.drawNightCloud();
     glPopMatrix();
 }
 
@@ -103,7 +142,7 @@ void moveCloud()
     }
     glPushMatrix();
     glTranslatef(CloudX, CloudY, 0);
-    Cloud();
+    NightCloud();
     glPopMatrix();
 }
 void BgBuildingDayTime()
@@ -900,7 +939,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 3
-    glColor3ub(0, 91, 133); 
+    glColor3ub(0, 91, 133);
     //top_box
     glBegin(GL_QUADS);
     glVertex2i(280, 355);
@@ -977,7 +1016,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 5
-    glColor3ub(0, 91, 133); 
+    glColor3ub(0, 91, 133);
     //top_1
     glBegin(GL_QUADS);
     glVertex2i(461, 400);
@@ -1030,7 +1069,7 @@ void BgBuildingNightTime()
     ///end
 
     ///BG Building 6
-    glColor3ub(0, 91, 133); 
+    glColor3ub(0, 91, 133);
     //top_stick!
     glBegin(GL_LINES);
     glLineWidth(2);
