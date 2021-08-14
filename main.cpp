@@ -2,22 +2,24 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <math.h>
+float CloudX = 0;
+float CloudY = 0;
+int CloudStatus = 1;
+void DrawCircle(float cx, float cy, float r, int num_segments)
+{
 
-void DrawCircle(float cx, float cy, float r, int num_segments){
+    glBegin(GL_TRIANGLE_FAN);
+    for (int i = 0; i < num_segments; i++)
+    {
+        float theta = 2.0f * 3.1415926f * float(i) / float(num_segments); //get the current angle
 
-		 glBegin(GL_TRIANGLE_FAN);
-		for (int i = 0; i < num_segments; i++)
-		{
-		float theta = 2.0f * 3.1415926f * float(i) / float(num_segments);//get the current angle
+        float x = r * cosf(theta); //calculate the x component
+        float y = r * sinf(theta); //calculate the y component
 
-		float x = r * cosf(theta);//calculate the x component
-		float y = r * sinf(theta);//calculate the y component
-
-		glVertex2f(x + cx, y + cy);//output vertex
-
-		}
-		glEnd();
-	}
+        glVertex2f(x + cx, y + cy); //output vertex
+    }
+    glEnd();
+}
 
 void sky()
 {
@@ -30,6 +32,66 @@ void sky()
     glVertex2i(1200, 145);
     glVertex2i(1200, 600);
     glEnd();
+}
+
+struct cloud
+{
+    void drawCloud()
+    {
+        glColor3f(1.0, 1.0, 1.0);
+        DrawCircle(246, 486, 23, 2000); //1
+        DrawCircle(290, 509, 40, 2000); //2
+        DrawCircle(350, 494, 36, 2000); //3
+        glColor3f(1.0, 1.0, 1.0);
+        glBegin(GL_QUADS);
+        glVertex2i(246, 480);
+        glVertex2i(246, 463);
+        glVertex2i(350, 459);
+        glVertex2i(350, 480);
+        glEnd();
+    }
+};
+
+void Cloud()
+{
+    cloud c;
+    //cloud 1
+    glPushMatrix();
+    glTranslated(300, -50, 0);
+    c.drawCloud();
+    glPopMatrix();
+    //cloud 2
+    glPushMatrix();
+    glTranslated(-150, 0, 0);
+    c.drawCloud();
+    glPopMatrix();
+    //cloud 3
+    glPushMatrix();
+    glTranslated(200, 50, 0);
+    c.drawCloud();
+    glPopMatrix();
+    //cloud 4
+    glPushMatrix();
+    glTranslated(600, -100, 0);
+    c.drawCloud();
+    glPopMatrix();
+}
+
+void moveCloud()
+
+{
+    if (CloudStatus == 1)
+    {
+        CloudX += .3;
+    }
+    if (CloudX > 1200)
+    {
+        CloudX = -200;
+    }
+    glPushMatrix();
+    glTranslatef(CloudX, CloudY, 0);
+    Cloud();
+    glPopMatrix();
 }
 void BgBuilding()
 {
@@ -7907,10 +7969,13 @@ void myDisplay(void)
 {
     glClear(GL_COLOR_BUFFER_BIT);
     sky();
+    moveCloud();
     BgBuilding();
     RoadField();
     NightTime();
     glFlush();
+    glutPostRedisplay();
+    glutSwapBuffers();
 }
 
 void myInit(void)
