@@ -63,7 +63,7 @@ struct cloud
         glVertex2i(350, 480);
         glEnd();
     }
-     void drawNightCloud()
+    void drawNightCloud()
     {
         glColor3ub(36, 138, 197);
         DrawCircle(246, 486, 23, 2000); //1
@@ -1025,7 +1025,7 @@ void BgBuildingNightTime()
     glVertex2i(461, 387);
     glEnd();
 
-   //top_2_curve
+    //top_2_curve
     glBegin(GL_QUADS);
     glVertex2i(461, 387);
     glVertex2i(484, 387);
@@ -1033,7 +1033,7 @@ void BgBuildingNightTime()
     glVertex2i(458, 380);
     glEnd();
 
-   //top_2
+    //top_2
     glBegin(GL_QUADS);
     glVertex2i(458, 380);
     glVertex2i(487, 380);
@@ -1041,8 +1041,7 @@ void BgBuildingNightTime()
     glVertex2i(458, 350);
     glEnd();
 
-
-   //top_curve
+    //top_curve
     glBegin(GL_QUADS);
     glVertex2i(455, 343);
     glVertex2i(490, 343);
@@ -1050,7 +1049,7 @@ void BgBuildingNightTime()
     glVertex2i(458, 350);
     glEnd();
 
-   //main
+    //main
     glBegin(GL_QUADS);
     glVertex2i(455, 170);
     glVertex2i(490, 170);
@@ -1058,7 +1057,7 @@ void BgBuildingNightTime()
     glVertex2i(455, 343);
     glEnd();
 
-   //righty
+    //righty
     glBegin(GL_QUADS);
     glVertex2i(490, 170);
     glVertex2i(513, 170);
@@ -1261,7 +1260,7 @@ void BgBuildingNightTime()
     glVertex2i(89, 309);
     glVertex2i(59, 309);
     glEnd();
-    
+
     glColor3ub(10, 7, 8); //nightwindow
     glBegin(GL_QUADS);
     glVertex2i(67, 274);
@@ -1269,7 +1268,7 @@ void BgBuildingNightTime()
     glVertex2i(89, 290);
     glVertex2i(67, 290);
     glEnd();
-    
+
     glColor3ub(10, 7, 8); //nightwindow
     glBegin(GL_QUADS);
     glVertex2i(67, 232);
@@ -1277,7 +1276,7 @@ void BgBuildingNightTime()
     glVertex2i(89, 253);
     glVertex2i(67, 253);
     glEnd();
-    
+
     glColor3ub(177, 101, 46);
     glLineWidth(3); //main_window_grill
     glColor3ub(0, 113, 168);
@@ -1364,13 +1363,13 @@ void BgBuildingNightTime()
     glVertex2i(592, 272);
     glVertex2i(600, 272);
     glVertex2i(600, 287);
-    glVertex2i(592, 287);   
+    glVertex2i(592, 287);
     glEnd();
     glBegin(GL_QUADS);
     glVertex2i(592, 238);
     glVertex2i(608, 238);
     glVertex2i(608, 253);
-    glVertex2i(592, 253);   
+    glVertex2i(592, 253);
     glEnd();
 
     glColor3ub(9, 118, 163);
@@ -1450,7 +1449,7 @@ void BgBuildingNightTime()
     glVertex2i(1163, 418);
     glVertex2i(1122, 418);
     glEnd();
-    
+
     glColor3ub(175, 111, 64); //nightwindow
     glBegin(GL_QUADS);
     glVertex2i(1120, 387);
@@ -1517,6 +1516,385 @@ void BgBuildingNightTime()
     glEnd();
 
     ///end
+}
+void DayCar()
+{
+    //car01
+    glColor3ub(199, 199, 193);
+    glBegin(GL_QUADS);
+    glVertex2i(104, 26);
+    glVertex2i(196, 26);
+    glVertex2i(196, 90);
+    glVertex2i(104, 90);
+    glEnd();
+
+    glColor3ub(180, 204, 201);
+    glBegin(GL_POLYGON);
+    glVertex2i(196, 26);
+    glVertex2i(226, 26);
+    glVertex2i(226, 50);
+    glVertex2i(210, 65);
+    glVertex2i(203, 80);
+    glVertex2i(196, 85);
+    glEnd();
+
+    glColor3ub(240, 109, 35);
+    glBegin(GL_QUADS);
+    glVertex2i(104, 32);
+    glVertex2i(196, 32);
+    glVertex2i(196, 90);
+    glVertex2i(104, 90);
+    glEnd();
+
+    //car 01 window
+    glColor3ub(253, 231, 215);
+    glBegin(GL_QUADS);
+    glVertex2i(196, 76);
+    glVertex2i(196, 61);
+    glVertex2i(218, 57);
+    glVertex2i(206, 72);
+    glEnd();
+
+    //Testing Github
+
+    /*
+glColor3ub(255,255, 255);
+glBegin(GL_LINES);
+glVertex2i(196, 61);
+glVertex2i(218, 57);
+glEnd();
+*/
+
+    //car02
+    glColor3ub(215, 236, 240);
+    glBegin(GL_POLYGON);
+    glVertex2i(535, 82);
+    glVertex2i(525, 82);
+    glVertex2i(518, 78);
+    glVertex2i(518, 74);
+    glVertex2i(518, 74);
+    glVertex2i(604, 74);
+    glVertex2i(604, 78);
+    glVertex2i(599, 82);
+    glVertex2i(590, 82);
+    glVertex2i(584, 106);
+    glVertex2i(541, 106);
+    glEnd();
+
+    glColor3ub(44, 136, 133); //car2 window 01
+    glBegin(GL_POLYGON);
+    glVertex2i(546, 101);
+    glVertex2i(541, 84);
+    glVertex2i(561, 84);
+    glVertex2i(561, 101);
+    glEnd();
+
+    glColor3ub(23, 125, 117); //car2 window 01 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(546, 101);
+    glVertex2i(561, 84);
+    glVertex2i(561, 101);
+    glEnd();
+
+    glColor3ub(44, 136, 133); //car2 window 02
+    glBegin(GL_POLYGON);
+    glVertex2i(565, 101);
+    glVertex2i(565, 84);
+    glVertex2i(585, 84);
+    glVertex2i(580, 101);
+    glEnd();
+
+    glColor3ub(23, 125, 117); //car2 window 02 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(565, 101);
+    glVertex2i(585, 84);
+    glVertex2i(580, 101);
+    glEnd();
+
+    //car03
+    glColor3ub(28, 138, 141);
+    glBegin(GL_POLYGON);
+    glVertex2i(735, 22);
+    glVertex2i(725, 22);
+    glVertex2i(718, 18);
+    glVertex2i(718, 14);
+    glVertex2i(718, 14);
+    glVertex2i(804, 14);
+    glVertex2i(804, 18);
+    glVertex2i(799, 22);
+    glVertex2i(790, 22);
+    glVertex2i(784, 46);
+    glVertex2i(741, 46);
+    glEnd();
+
+    glColor3ub(153, 200, 209); //car3 window 01
+    glBegin(GL_POLYGON);
+    glVertex2i(746, 41);
+    glVertex2i(741, 22);
+    glVertex2i(761, 22);
+    glVertex2i(761, 41);
+    glEnd();
+
+    glColor3ub(132, 172, 176); //car3 window 01 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(746, 41);
+    glVertex2i(741, 22);
+    glVertex2i(761, 41);
+    glEnd();
+
+    glColor3ub(153, 200, 209); //car2 window 02
+    glBegin(GL_POLYGON);
+    glVertex2i(765, 41);
+    glVertex2i(765, 22);
+    glVertex2i(784, 22);
+    glVertex2i(779, 41);
+    glEnd();
+
+    glColor3ub(132, 172, 176); //car3 window 02 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(765, 41);
+    glVertex2i(765, 22);
+    glVertex2i(779, 41);
+    glEnd();
+
+    //car04
+    glColor3ub(238, 84, 59);
+    glBegin(GL_POLYGON);
+    glVertex2i(895, 22);
+    glVertex2i(885, 22);
+    glVertex2i(878, 18);
+    glVertex2i(878, 14);
+    glVertex2i(878, 14);
+    glVertex2i(964, 14);
+    glVertex2i(964, 18);
+    glVertex2i(959, 22);
+    glVertex2i(950, 22);
+    glVertex2i(944, 46);
+    glVertex2i(901, 46);
+    glEnd();
+    /*glVertex2i(0, 122);
+glVertex2i(1200, 122);
+glEnd();*/
+
+    glColor3ub(219, 238, 243); //car4 window 01
+    glBegin(GL_POLYGON);
+    glVertex2i(906, 41);
+    glVertex2i(901, 22);
+    glVertex2i(921, 22);
+    glVertex2i(921, 41);
+    glEnd();
+
+    glColor3ub(182, 190, 184); //car4 window 01 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(906, 41);
+    glVertex2i(901, 22);
+    glVertex2i(921, 41);
+    glEnd();
+
+    glColor3ub(219, 238, 243); //car4 window 02
+    glBegin(GL_POLYGON);
+    glVertex2i(925, 41);
+    glVertex2i(925, 22);
+    glVertex2i(944, 22);
+    glVertex2i(939, 41);
+    glEnd();
+
+    glColor3ub(182, 190, 184); //car4 window 02 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(925, 41);
+    glVertex2i(925, 22);
+    glVertex2i(939, 41);
+    glEnd();
+}
+
+void NightCar()
+{
+    //car01
+    glColor3ub(199, 199, 193);
+    glBegin(GL_QUADS);
+    glVertex2i(104, 26);
+    glVertex2i(196, 26);
+    glVertex2i(196, 90);
+    glVertex2i(104, 90);
+    glEnd();
+
+    glColor3ub(180, 204, 201);
+    glBegin(GL_POLYGON);
+    glVertex2i(196, 26);
+    glVertex2i(226, 26);
+    glVertex2i(226, 50);
+    glVertex2i(210, 65);
+    glVertex2i(203, 80);
+    glVertex2i(196, 85);
+    glEnd();
+
+    glColor3ub(240, 109, 35);
+    glBegin(GL_QUADS);
+    glVertex2i(104, 32);
+    glVertex2i(196, 32);
+    glVertex2i(196, 90);
+    glVertex2i(104, 90);
+    glEnd();
+
+    //car 01 window
+    glColor3ub(253, 231, 215);
+    glBegin(GL_QUADS);
+    glVertex2i(196, 76);
+    glVertex2i(196, 61);
+    glVertex2i(218, 57);
+    glVertex2i(206, 72);
+    glEnd();
+
+    //Testing Github
+
+    /*
+glColor3ub(255,255, 255);
+glBegin(GL_LINES);
+glVertex2i(196, 61);
+glVertex2i(218, 57);
+glEnd();
+*/
+
+    //car02
+    glColor3ub(215, 236, 240);
+    glBegin(GL_POLYGON);
+    glVertex2i(535, 82);
+    glVertex2i(525, 82);
+    glVertex2i(518, 78);
+    glVertex2i(518, 74);
+    glVertex2i(518, 74);
+    glVertex2i(604, 74);
+    glVertex2i(604, 78);
+    glVertex2i(599, 82);
+    glVertex2i(590, 82);
+    glVertex2i(584, 106);
+    glVertex2i(541, 106);
+    glEnd();
+
+    glColor3ub(44, 136, 133); //car2 window 01
+    glBegin(GL_POLYGON);
+    glVertex2i(546, 101);
+    glVertex2i(541, 84);
+    glVertex2i(561, 84);
+    glVertex2i(561, 101);
+    glEnd();
+
+    glColor3ub(23, 125, 117); //car2 window 01 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(546, 101);
+    glVertex2i(561, 84);
+    glVertex2i(561, 101);
+    glEnd();
+
+    glColor3ub(44, 136, 133); //car2 window 02
+    glBegin(GL_POLYGON);
+    glVertex2i(565, 101);
+    glVertex2i(565, 84);
+    glVertex2i(585, 84);
+    glVertex2i(580, 101);
+    glEnd();
+
+    glColor3ub(23, 125, 117); //car2 window 02 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(565, 101);
+    glVertex2i(585, 84);
+    glVertex2i(580, 101);
+    glEnd();
+
+    //car03
+    glColor3ub(28, 138, 141);
+    glBegin(GL_POLYGON);
+    glVertex2i(735, 22);
+    glVertex2i(725, 22);
+    glVertex2i(718, 18);
+    glVertex2i(718, 14);
+    glVertex2i(718, 14);
+    glVertex2i(804, 14);
+    glVertex2i(804, 18);
+    glVertex2i(799, 22);
+    glVertex2i(790, 22);
+    glVertex2i(784, 46);
+    glVertex2i(741, 46);
+    glEnd();
+
+    glColor3ub(153, 200, 209); //car3 window 01
+    glBegin(GL_POLYGON);
+    glVertex2i(746, 41);
+    glVertex2i(741, 22);
+    glVertex2i(761, 22);
+    glVertex2i(761, 41);
+    glEnd();
+
+    glColor3ub(132, 172, 176); //car3 window 01 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(746, 41);
+    glVertex2i(741, 22);
+    glVertex2i(761, 41);
+    glEnd();
+
+    glColor3ub(153, 200, 209); //car2 window 02
+    glBegin(GL_POLYGON);
+    glVertex2i(765, 41);
+    glVertex2i(765, 22);
+    glVertex2i(784, 22);
+    glVertex2i(779, 41);
+    glEnd();
+
+    glColor3ub(132, 172, 176); //car3 window 02 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(765, 41);
+    glVertex2i(765, 22);
+    glVertex2i(779, 41);
+    glEnd();
+
+    //car04
+    glColor3ub(238, 84, 59);
+    glBegin(GL_POLYGON);
+    glVertex2i(895, 22);
+    glVertex2i(885, 22);
+    glVertex2i(878, 18);
+    glVertex2i(878, 14);
+    glVertex2i(878, 14);
+    glVertex2i(964, 14);
+    glVertex2i(964, 18);
+    glVertex2i(959, 22);
+    glVertex2i(950, 22);
+    glVertex2i(944, 46);
+    glVertex2i(901, 46);
+    glEnd();
+    /*glVertex2i(0, 122);
+glVertex2i(1200, 122);
+glEnd();*/
+
+    glColor3ub(219, 238, 243); //car4 window 01
+    glBegin(GL_POLYGON);
+    glVertex2i(906, 41);
+    glVertex2i(901, 22);
+    glVertex2i(921, 22);
+    glVertex2i(921, 41);
+    glEnd();
+
+    glColor3ub(182, 190, 184); //car4 window 01 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(906, 41);
+    glVertex2i(901, 22);
+    glVertex2i(921, 41);
+    glEnd();
+
+    glColor3ub(219, 238, 243); //car4 window 02
+    glBegin(GL_POLYGON);
+    glVertex2i(925, 41);
+    glVertex2i(925, 22);
+    glVertex2i(944, 22);
+    glVertex2i(939, 41);
+    glEnd();
+
+    glColor3ub(182, 190, 184); //car4 window 02 Glitch
+    glBegin(GL_TRIANGLES);
+    glVertex2i(925, 41);
+    glVertex2i(925, 22);
+    glVertex2i(939, 41);
+    glEnd();
 }
 
 void RoadFieldDay()
@@ -5156,7 +5534,7 @@ void NightTime()
 
     //1st building
 
-    glBegin(GL_POLYGON);///tarrace
+    glBegin(GL_POLYGON); ///tarrace
     glPointSize(10.0);
     glColor3ub(9, 26, 34);
     glVertex2i(310, 250);
@@ -5165,7 +5543,7 @@ void NightTime()
     glVertex2i(318, 262);
     glEnd();
 
-    glBegin(GL_QUADS);///bar
+    glBegin(GL_QUADS); ///bar
     glPointSize(10.0);
     glColor3ub(0, 82, 132);
     glVertex2i(305, 245);
@@ -5173,7 +5551,7 @@ void NightTime()
     glVertex2i(397, 250);
     glVertex2i(306, 250);
 
-    glBegin(GL_QUADS);///body
+    glBegin(GL_QUADS); ///body
     glPointSize(10.0);
     glColor3ub(0, 125, 163);
     glVertex2i(310, 145);
@@ -5182,7 +5560,7 @@ void NightTime()
     glVertex2i(310, 245);
     glEnd();
 
-    glBegin(GL_QUADS);///middle bar
+    glBegin(GL_QUADS); ///middle bar
     glPointSize(10.0);
     glColor3ub(38, 41, 22);
     glVertex2i(310, 212);
@@ -5191,7 +5569,7 @@ void NightTime()
     glVertex2i(310, 217);
     glEnd();
 
-    glBegin(GL_QUADS);///1st window
+    glBegin(GL_QUADS); ///1st window
     glPointSize(10.0);
     glColor3ub(204, 149, 60);
     glVertex2i(322, 217);
@@ -5211,7 +5589,7 @@ void NightTime()
     glVertex2i(330, 218);
     glEnd();
 
-    glBegin(GL_QUADS);///2nd window
+    glBegin(GL_QUADS); ///2nd window
     glPointSize(10.0);
     glColor3ub(204, 149, 60);
     glVertex2i(345, 217);
@@ -5230,7 +5608,7 @@ void NightTime()
     glVertex2i(352, 218);
     glEnd();
 
-    glBegin(GL_QUADS);///3rd window
+    glBegin(GL_QUADS); ///3rd window
     glPointSize(10.0);
     glColor3ub(204, 149, 60);
     glVertex2i(368, 217);
@@ -5249,7 +5627,7 @@ void NightTime()
     glVertex2i(375, 218);
     glEnd();
 
-    glBegin(GL_QUADS);///4th window
+    glBegin(GL_QUADS); ///4th window
     glPointSize(10.0);
     glColor3ub(2, 20, 30);
     glVertex2i(335, 185);
@@ -5268,7 +5646,7 @@ void NightTime()
     glVertex2i(340, 185);
     glEnd();
 
-    glBegin(GL_QUADS);///5th window
+    glBegin(GL_QUADS); ///5th window
     glPointSize(10.0);
     glColor3ub(2, 20, 30);
     glVertex2i(355, 185);
@@ -6377,7 +6755,7 @@ void NightTime()
     glVertex2i(363, 185);
     glEnd();
 
-    glBegin(GL_QUADS);///door
+    glBegin(GL_QUADS); ///door
     glPointSize(10.0);
     glColor3ub(13, 42, 84);
     glVertex2i(328, 152);
@@ -6386,7 +6764,7 @@ void NightTime()
     glVertex2i(328, 170);
     glEnd();
 
-    glBegin(GL_QUADS);///door
+    glBegin(GL_QUADS); ///door
     glPointSize(10.0);
     glColor3ub(0, 87, 112);
     glVertex2i(328, 144);
@@ -6395,7 +6773,7 @@ void NightTime()
     glVertex2i(328, 146);
     glEnd();
 
-    glBegin(GL_QUADS);///door
+    glBegin(GL_QUADS); ///door
     glPointSize(10.0);
     glColor3ub(0, 87, 112);
     glVertex2i(328, 146);
@@ -6427,7 +6805,7 @@ void NightTime()
 
     //2nd building
 
-    glBegin(GL_QUADS);///side bar
+    glBegin(GL_QUADS); ///side bar
     glPointSize(10.0);
     glColor3ub(7, 26, 33);
     glVertex2i(407, 144);
@@ -6436,7 +6814,7 @@ void NightTime()
     glVertex2i(407, 330);
     glEnd();
 
-    glBegin(GL_QUADS);///main
+    glBegin(GL_QUADS); ///main
     glPointSize(10.0);
     glColor3ub(34, 135, 197);
     glVertex2i(427, 144);
@@ -6445,7 +6823,7 @@ void NightTime()
     glVertex2i(427, 330);
     glEnd();
 
-    glBegin(GL_QUADS);///top_side bar
+    glBegin(GL_QUADS); ///top_side bar
     glPointSize(10.0);
     glColor3ub(16, 17, 8);
     glVertex2i(406, 330);
@@ -6454,7 +6832,7 @@ void NightTime()
     glVertex2i(406, 336);
     glEnd();
 
-    glBegin(GL_QUADS);///top bottom bar
+    glBegin(GL_QUADS); ///top bottom bar
     glPointSize(10.0);
     glColor3ub(37, 142, 196);
     glVertex2i(427, 330);
@@ -6463,7 +6841,7 @@ void NightTime()
     glVertex2i(427, 336);
     glEnd();
 
-    glBegin(GL_QUADS);///1st window
+    glBegin(GL_QUADS); ///1st window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(436, 305);
@@ -6472,7 +6850,7 @@ void NightTime()
     glVertex2i(436, 315);
     glEnd();
 
-    glBegin(GL_QUADS);///1st window bar
+    glBegin(GL_QUADS); ///1st window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(436, 316);
@@ -6481,7 +6859,7 @@ void NightTime()
     glVertex2i(436, 318);
     glEnd();
 
-    glBegin(GL_QUADS);///2nd window
+    glBegin(GL_QUADS); ///2nd window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(450, 305);
@@ -6490,7 +6868,7 @@ void NightTime()
     glVertex2i(450, 315);
     glEnd();
 
-    glBegin(GL_QUADS);///2nd window bar
+    glBegin(GL_QUADS); ///2nd window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(450, 316);
@@ -6499,7 +6877,7 @@ void NightTime()
     glVertex2i(450, 318);
     glEnd();
 
-    glBegin(GL_QUADS);///3rd window
+    glBegin(GL_QUADS); ///3rd window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(465, 305);
@@ -6508,7 +6886,7 @@ void NightTime()
     glVertex2i(465, 315);
     glEnd();
 
-    glBegin(GL_QUADS);///3rd window bar
+    glBegin(GL_QUADS); ///3rd window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(465, 316);
@@ -6517,7 +6895,7 @@ void NightTime()
     glVertex2i(465, 318);
     glEnd();
 
-    glBegin(GL_QUADS);///bottom bar
+    glBegin(GL_QUADS); ///bottom bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(435, 299);
@@ -6526,7 +6904,7 @@ void NightTime()
     glVertex2i(435, 302);
     glEnd();
 
-    glBegin(GL_QUADS);///4th window
+    glBegin(GL_QUADS); ///4th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(435, 265);
@@ -6535,7 +6913,7 @@ void NightTime()
     glVertex2i(435, 275);
     glEnd();
 
-    glBegin(GL_QUADS);///4th window bar
+    glBegin(GL_QUADS); ///4th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(435, 275);
@@ -6544,7 +6922,7 @@ void NightTime()
     glVertex2i(435, 277);
     glEnd();
 
-    glBegin(GL_QUADS);///6th window
+    glBegin(GL_QUADS); ///6th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(465, 265);
@@ -6553,7 +6931,7 @@ void NightTime()
     glVertex2i(465, 275);
     glEnd();
 
-    glBegin(GL_QUADS);///6th window bar
+    glBegin(GL_QUADS); ///6th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(465, 275);
@@ -6562,7 +6940,7 @@ void NightTime()
     glVertex2i(465, 277);
     glEnd();
 
-    glBegin(GL_QUADS);///5th window
+    glBegin(GL_QUADS); ///5th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(450, 265);
@@ -6571,7 +6949,7 @@ void NightTime()
     glVertex2i(450, 275);
     glEnd();
 
-    glBegin(GL_QUADS);///5th window bar
+    glBegin(GL_QUADS); ///5th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(450, 275);
@@ -6580,7 +6958,7 @@ void NightTime()
     glVertex2i(450, 277);
     glEnd();
 
-    glBegin(GL_QUADS);///2nd bottom bar
+    glBegin(GL_QUADS); ///2nd bottom bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(435, 262);
@@ -6589,7 +6967,7 @@ void NightTime()
     glVertex2i(435, 259);
     glEnd();
 
-    glBegin(GL_QUADS);///7th window
+    glBegin(GL_QUADS); ///7th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(435, 220);
@@ -6598,7 +6976,7 @@ void NightTime()
     glVertex2i(435, 230);
     glEnd();
 
-    glBegin(GL_QUADS);///7th window bar
+    glBegin(GL_QUADS); ///7th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(435, 231);
@@ -6607,7 +6985,7 @@ void NightTime()
     glVertex2i(435, 233);
     glEnd();
 
-    glBegin(GL_QUADS);///8th window
+    glBegin(GL_QUADS); ///8th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(450, 220);
@@ -6616,7 +6994,7 @@ void NightTime()
     glVertex2i(450, 230);
     glEnd();
 
-    glBegin(GL_QUADS);///8th window bar
+    glBegin(GL_QUADS); ///8th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(450, 231);
@@ -6625,7 +7003,7 @@ void NightTime()
     glVertex2i(450, 233);
     glEnd();
 
-    glBegin(GL_QUADS);///9th window
+    glBegin(GL_QUADS); ///9th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(465, 220);
@@ -6634,7 +7012,7 @@ void NightTime()
     glVertex2i(465, 230);
     glEnd();
 
-    glBegin(GL_QUADS);///9th window bar
+    glBegin(GL_QUADS); ///9th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(465, 231);
@@ -6643,7 +7021,7 @@ void NightTime()
     glVertex2i(465, 233);
     glEnd();
 
-    glBegin(GL_QUADS);///3rd bottom bar
+    glBegin(GL_QUADS); ///3rd bottom bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(450, 214);
@@ -6652,7 +7030,7 @@ void NightTime()
     glVertex2i(450, 217);
     glEnd();
 
-    glBegin(GL_QUADS);///10th window
+    glBegin(GL_QUADS); ///10th window
     glPointSize(10.0);
     glColor3ub(5, 45, 74);
     glVertex2i(465, 175);
@@ -6661,7 +7039,7 @@ void NightTime()
     glVertex2i(465, 185);
     glEnd();
 
-    glBegin(GL_QUADS);///10th window bar
+    glBegin(GL_QUADS); ///10th window bar
     glPointSize(10.0);
     glColor3ub(206, 140, 77);
     glVertex2i(465, 186);
@@ -6670,7 +7048,7 @@ void NightTime()
     glVertex2i(465, 188);
     glEnd();
 
-    glBegin(GL_QUADS);///last bottom bar
+    glBegin(GL_QUADS); ///last bottom bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(455, 170);
@@ -6681,7 +7059,7 @@ void NightTime()
 
     //3rd building
 
-    glBegin(GL_TRIANGLES);///left triangle
+    glBegin(GL_TRIANGLES); ///left triangle
     glPointSize(10.0);
     glColor3ub(9, 43, 72);
     glVertex2i(492, 280);
@@ -6689,7 +7067,7 @@ void NightTime()
     glVertex2i(535, 312);
     glEnd();
 
-    glBegin(GL_TRIANGLES);///right trio
+    glBegin(GL_TRIANGLES); ///right trio
     glPointSize(10.0);
     glColor3ub(108, 181, 224);
     glVertex2i(540, 280);
@@ -6697,7 +7075,7 @@ void NightTime()
     glVertex2i(535, 312);
     glEnd();
 
-    glBegin(GL_QUADS);///left body
+    glBegin(GL_QUADS); ///left body
     glPointSize(10.0);
     glColor3ub(12, 46, 80);
     glVertex2i(495, 145);
@@ -6706,7 +7084,7 @@ void NightTime()
     glVertex2i(495, 280);
     glEnd();
 
-    glBegin(GL_QUADS);///right body
+    glBegin(GL_QUADS); ///right body
     glPointSize(10.0);
     glColor3ub(7, 134, 181);
     glVertex2i(540, 145);
@@ -6715,7 +7093,7 @@ void NightTime()
     glVertex2i(540, 280);
     glEnd();
 
-    glBegin(GL_QUADS);///left inB
+    glBegin(GL_QUADS); ///left inB
     glPointSize(10.0);
     glColor3ub(12, 46, 80);
     glVertex2i(500, 170);
@@ -6731,115 +7109,115 @@ void NightTime()
     glVertex2i(535, 270);
     glEnd();
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 260);
     glVertex2i(535, 260);
-    glEnd();//2
+    glEnd(); //2
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 250);
     glVertex2i(535, 250);
     glEnd(); //3
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 240);
     glVertex2i(535, 240);
     glEnd(); //4
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 230);
     glVertex2i(535, 230);
     glEnd(); //5
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 220);
     glVertex2i(535, 220);
     glEnd(); //6
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 210);
     glVertex2i(535, 210);
     glEnd(); //7
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 200);
     glVertex2i(535, 200);
     glEnd(); //8
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 190);
     glVertex2i(535, 190);
     glEnd(); //9
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 180);
     glVertex2i(535, 180);
     glEnd(); //10
 
-    glBegin(GL_LINES);///row
+    glBegin(GL_LINES); ///row
     glColor3ub(0, 0, 0);
     glVertex2i(495, 170);
     glVertex2i(535, 170);
     glEnd(); //11
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(500, 275);
     glVertex2i(500, 170);
     glEnd(); //1
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(505, 275);
     glVertex2i(505, 170);
     glEnd(); //2
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(510, 275);
     glVertex2i(510, 170);
     glEnd(); //3
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(515, 275);
     glVertex2i(515, 170);
     glEnd(); //4
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(520, 275);
     glVertex2i(520, 170);
     glEnd(); //5
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(525, 275);
     glVertex2i(525, 170);
     glEnd(); //6
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(530, 275);
     glVertex2i(530, 170);
     glEnd();
 
-    glBegin(GL_LINES);///column
+    glBegin(GL_LINES); ///column
     glColor3ub(0, 0, 0);
     glVertex2i(535, 275);
     glVertex2i(535, 170);
     glEnd();
 
-    glBegin(GL_QUADS);///right inB
+    glBegin(GL_QUADS); ///right inB
     glPointSize(10.0);
     glColor3ub(7, 134, 181);
     glVertex2i(545, 150);
@@ -6995,7 +7373,7 @@ void NightTime()
 
     //5th building
 
-    glBegin(GL_QUADS);///front
+    glBegin(GL_QUADS); ///front
     glPointSize(10.0);
     glColor3ub(4, 110, 150);
     glVertex2i(645, 165);
@@ -7004,7 +7382,7 @@ void NightTime()
     glVertex2i(645, 330);
     glEnd();
 
-    glBegin(GL_QUADS);///back
+    glBegin(GL_QUADS); ///back
     glPointSize(10.0);
     glColor3ub(6, 45, 69);
     glVertex2i(705, 270);
@@ -7032,7 +7410,7 @@ void NightTime()
     glEnd();
 
     //1st
-    glBegin(GL_QUADS);///window1
+    glBegin(GL_QUADS); ///window1
     glPointSize(10.0);
     glColor3ub(27, 174, 223);
     glVertex2i(650, 300);
@@ -7910,7 +8288,7 @@ void NightTime()
     //2nd building
     glBegin(GL_QUADS); //red1 b2
     glPointSize(10.0);
-    glColor3ub(6,41,50);
+    glColor3ub(6, 41, 50);
     glVertex2i(855, 155);
     glVertex2i(865, 155);
     glVertex2i(865, 330);
@@ -7919,7 +8297,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //red2 b2 border
     glPointSize(10.0);
-    glColor3ub(6,41,50);
+    glColor3ub(6, 41, 50);
     glVertex2i(850, 325);
     glVertex2i(865, 325);
     glVertex2i(865, 335);
@@ -7927,7 +8305,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //green1 b2
     glPointSize(10.0);
-    glColor3ub(3,125,164);
+    glColor3ub(3, 125, 164);
     glVertex2i(865, 155);
     glVertex2i(925, 155);
     glVertex2i(925, 330);
@@ -7935,7 +8313,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //green2 b2 border
     glPointSize(10.0);
-    glColor3ub(3,125,164);
+    glColor3ub(3, 125, 164);
     glVertex2i(860, 325);
     glVertex2i(930, 325);
     glVertex2i(930, 335);
@@ -7943,7 +8321,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w1 b2
     glPointSize(10.0);
-    glColor3ub(204,160,65);
+    glColor3ub(204, 160, 65);
     glVertex2i(870, 290);
     glVertex2i(885, 290);
     glVertex2i(885, 310);
@@ -7951,7 +8329,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w2 b2
     glPointSize(10.0);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(890, 290);
     glVertex2i(905, 290);
     glVertex2i(905, 310);
@@ -7959,7 +8337,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w3 b2
     glPointSize(10.0);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(910, 290);
     glVertex2i(925, 290);
     glVertex2i(925, 310);
@@ -7969,14 +8347,14 @@ void NightTime()
 
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(867, 282);
     glVertex2i(923, 282);
     glEnd();
 
     glBegin(GL_QUADS); //w4 b2
     glPointSize(10.0);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(870, 255);
     glVertex2i(885, 255);
     glVertex2i(885, 275);
@@ -7984,7 +8362,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w5 b2
     glPointSize(10.0);
-    glColor3ub(204,160,65);
+    glColor3ub(204, 160, 65);
     glVertex2i(890, 255);
     glVertex2i(905, 255);
     glVertex2i(905, 275);
@@ -7993,7 +8371,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w6 b2
     glPointSize(10.0);
-    glColor3ub(204,160,65);
+    glColor3ub(204, 160, 65);
     glVertex2i(910, 255);
     glVertex2i(925, 255);
     glVertex2i(925, 275);
@@ -8002,14 +8380,14 @@ void NightTime()
     //line border2
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(867, 244);
     glVertex2i(923, 244);
     glEnd();
 
     glBegin(GL_QUADS); //w7 b2
     glPointSize(10.0);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(870, 220);
     glVertex2i(885, 220);
     glVertex2i(885, 240);
@@ -8018,7 +8396,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w8 b2
     glPointSize(10.0);
-    glColor3ub(204,160,65);
+    glColor3ub(204, 160, 65);
     glVertex2i(890, 220);
     glVertex2i(905, 220);
     glVertex2i(905, 240);
@@ -8027,7 +8405,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w9 b2
     glPointSize(10.0);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(910, 220);
     glVertex2i(925, 220);
     glVertex2i(925, 240);
@@ -8037,7 +8415,7 @@ void NightTime()
     //line border3
     glBegin(GL_LINES);
     glLineWidth(10);
-    glColor3ub(2,52,75);
+    glColor3ub(2, 52, 75);
     glVertex2i(867, 204);
     glVertex2i(923, 204);
     glEnd();
@@ -8045,7 +8423,7 @@ void NightTime()
     //1st building.
     glBegin(GL_QUADS); //red part b1
     glPointSize(10.0);
-    glColor3ub(14,48,60);
+    glColor3ub(14, 48, 60);
     glVertex2i(774, 147);
     glVertex2i(790, 147);
     glVertex2i(790, 242);
@@ -8054,26 +8432,26 @@ void NightTime()
     // border
     glLineWidth(1);
     glBegin(GL_LINES);
-    glColor3ub(8,32,60);
+    glColor3ub(8, 32, 60);
     glVertex2i(777, 146);
     glVertex2i(777, 242);
     glEnd();
     glBegin(GL_LINES);
     glLineWidth(04);
-    glColor3ub(8,32,60);
+    glColor3ub(8, 32, 60);
     glVertex2i(782, 146);
     glVertex2i(782, 242);
     glEnd();
     glBegin(GL_LINES);
     glLineWidth(04);
-    glColor3ub(8,32,60);
+    glColor3ub(8, 32, 60);
     glVertex2i(789, 146);
     glVertex2i(789, 242);
     glEnd();
 
     glBegin(GL_QUADS); //white part b1
     glPointSize(10.0);
-    glColor3ub(30,61,113);
+    glColor3ub(30, 61, 113);
     glVertex2i(790, 147);
     glVertex2i(863, 147);
     glVertex2i(863, 242);
@@ -8081,7 +8459,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w1 b1
     glPointSize(10.0);
-    glColor3ub(6,101,150);
+    glColor3ub(6, 101, 150);
     glVertex2i(800, 217);
     glVertex2i(813, 217);
     glVertex2i(813, 232);
@@ -8090,7 +8468,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w2 b1
     glPointSize(10.0);
-    glColor3ub(204,165,51);
+    glColor3ub(204, 165, 51);
     glVertex2i(820, 217);
     glVertex2i(833, 217);
     glVertex2i(833, 232);
@@ -8098,7 +8476,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w3 b1
     glPointSize(10.0);
-    glColor3ub(6,101,150);
+    glColor3ub(6, 101, 150);
     glVertex2i(840, 217);
     glVertex2i(853, 217);
     glVertex2i(853, 232);
@@ -8106,7 +8484,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w4 b1
     glPointSize(10.0);
-    glColor3ub(6,101,150);
+    glColor3ub(6, 101, 150);
     glVertex2i(800, 188);
     glVertex2i(813, 188);
     glVertex2i(813, 203);
@@ -8114,7 +8492,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w5 b1
     glPointSize(10.0);
-    glColor3ub(204,165,51);
+    glColor3ub(204, 165, 51);
     glVertex2i(820, 188);
     glVertex2i(833, 188);
     glVertex2i(833, 203);
@@ -8122,7 +8500,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w6 b1
     glPointSize(10.0);
-    glColor3ub(204,165,51);
+    glColor3ub(204, 165, 51);
     glVertex2i(840, 188);
     glVertex2i(853, 188);
     glVertex2i(853, 203);
@@ -8131,7 +8509,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w7 b1
     glPointSize(10.0);
-    glColor3ub(204,165,51);
+    glColor3ub(204, 165, 51);
     glVertex2i(800, 159);
     glVertex2i(813, 159);
     glVertex2i(813, 174);
@@ -8139,7 +8517,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w8 b1
     glPointSize(10.0);
-    glColor3ub(6,101,150);
+    glColor3ub(6, 101, 150);
     glVertex2i(820, 159);
     glVertex2i(833, 159);
     glVertex2i(833, 174);
@@ -8147,7 +8525,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w9 b1
     glPointSize(10.0);
-    glColor3ub(6,101,150);
+    glColor3ub(6, 101, 150);
     glVertex2i(840, 159);
     glVertex2i(853, 159);
     glVertex2i(853, 174);
@@ -8157,7 +8535,7 @@ void NightTime()
     //3rd building
     glBegin(GL_QUADS); //b3 border
     glPointSize(10.0);
-    glColor3ub(8,90,117);
+    glColor3ub(8, 90, 117);
     glVertex2i(924, 145);
     glVertex2i(934, 145);
     glVertex2i(934, 252);
@@ -8166,7 +8544,7 @@ void NightTime()
     //Red part b3
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(98,161,199);
+    glColor3ub(98, 161, 199);
     glVertex2i(934, 145);
     glVertex2i(995, 145);
     glVertex2i(995, 252);
@@ -8174,7 +8552,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w1 b3
+    glColor3ub(2, 30, 49); //w1 b3
     glVertex2i(952, 235);
     glVertex2i(960, 235);
     glVertex2i(960, 245);
@@ -8182,7 +8560,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w2 b3
+    glColor3ub(2, 30, 49); //w2 b3
     glVertex2i(975, 235);
     glVertex2i(984, 235);
     glVertex2i(984, 245);
@@ -8190,7 +8568,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(255,184,0); //w3 b3
+    glColor3ub(255, 184, 0); //w3 b3
     glVertex2i(940, 220);
     glVertex2i(950, 220);
     glVertex2i(950, 230);
@@ -8198,7 +8576,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(255,184,0); //w4 b3
+    glColor3ub(255, 184, 0); //w4 b3
     glVertex2i(963, 220);
     glVertex2i(973, 220);
     glVertex2i(973, 232);
@@ -8206,7 +8584,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w5 b3
+    glColor3ub(2, 30, 49); //w5 b3
     glVertex2i(952, 205);
     glVertex2i(960, 205);
     glVertex2i(960, 215);
@@ -8214,7 +8592,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w6 b3
+    glColor3ub(2, 30, 49); //w6 b3
     glVertex2i(975, 205);
     glVertex2i(984, 205);
     glVertex2i(984, 215);
@@ -8223,7 +8601,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w7 b3
+    glColor3ub(2, 30, 49); //w7 b3
     glVertex2i(940, 190);
     glVertex2i(950, 190);
     glVertex2i(950, 200);
@@ -8232,7 +8610,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(255,184,0); //w8 b3
+    glColor3ub(255, 184, 0); //w8 b3
     glVertex2i(963, 190);
     glVertex2i(973, 190);
     glVertex2i(973, 200);
@@ -8240,7 +8618,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(255,184,0); //w9 b3
+    glColor3ub(255, 184, 0); //w9 b3
     glVertex2i(952, 180);
     glVertex2i(960, 180);
     glVertex2i(960, 190);
@@ -8249,7 +8627,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w10 b3
+    glColor3ub(2, 30, 49); //w10 b3
     glVertex2i(975, 180);
     glVertex2i(984, 180);
     glVertex2i(984, 190);
@@ -8257,7 +8635,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w11 b3
+    glColor3ub(2, 30, 49); //w11 b3
     glVertex2i(940, 165);
     glVertex2i(950, 165);
     glVertex2i(950, 175);
@@ -8265,7 +8643,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(255,184,0); //w12 b3
+    glColor3ub(255, 184, 0); //w12 b3
     glVertex2i(963, 165);
     glVertex2i(973, 165);
     glVertex2i(973, 175);
@@ -8273,7 +8651,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(2,30,49); //w13 b3
+    glColor3ub(2, 30, 49); //w13 b3
     glVertex2i(952, 150);
     glVertex2i(960, 150);
     glVertex2i(960, 160);
@@ -8281,7 +8659,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(255,184,0); //w14 b3
+    glColor3ub(255, 184, 0); //w14 b3
     glVertex2i(975, 150);
     glVertex2i(984, 150);
     glVertex2i(984, 160);
@@ -8291,7 +8669,7 @@ void NightTime()
     //4th building
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(0,136,173);
+    glColor3ub(0, 136, 173);
     glVertex2i(1010, 147);
     glVertex2i(1025, 147);
     glVertex2i(1025, 208);
@@ -8300,7 +8678,7 @@ void NightTime()
 
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(1,20,29); //deep oranger part b4
+    glColor3ub(1, 20, 29); //deep oranger part b4
     glVertex2i(1025, 147);
     glVertex2i(1030, 147);
     glVertex2i(1030, 208);
@@ -8308,7 +8686,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(11,46,84); //light oranger part b4
+    glColor3ub(11, 46, 84); //light oranger part b4
     glVertex2i(1030, 147);
     glVertex2i(1060, 147);
     glVertex2i(1060, 208);
@@ -8316,7 +8694,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //light brik 1
     glPointSize(10.0);
-    glColor3ub(0,136,173);
+    glColor3ub(0, 136, 173);
     glVertex2i(1060, 147);
     glVertex2i(1074, 147);
     glVertex2i(1074, 208);
@@ -8324,7 +8702,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //light brik 2
     glPointSize(10.0);
-    glColor3ub(0,136,173);
+    glColor3ub(0, 136, 173);
     glVertex2i(1060, 147);
     glVertex2i(1074, 147);
     glVertex2i(1074, 208);
@@ -8332,7 +8710,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //light brik square
     glPointSize(10.0);
-    glColor3ub(0,136,173);
+    glColor3ub(0, 136, 173);
     glVertex2i(1010, 208);
     glVertex2i(1074, 208);
     glVertex2i(1074, 233);
@@ -8340,7 +8718,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //white border
     glPointSize(10.0);
-    glColor3ub(0,22,32);
+    glColor3ub(0, 22, 32);
     glVertex2i(1010, 233);
     glVertex2i(1074, 233);
     glVertex2i(1074, 239);
@@ -8348,7 +8726,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //upper brik
     glPointSize(10.0);
-    glColor3ub(0,136,173);
+    glColor3ub(0, 136, 173);
     glVertex2i(1010, 239);
     glVertex2i(1074, 239);
     glVertex2i(1074, 282);
@@ -8356,7 +8734,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W1
     glPointSize(10.0);
-    glColor3ub(4,27,40);
+    glColor3ub(4, 27, 40);
     glVertex2i(1018, 260);
     glVertex2i(1024, 260);
     glVertex2i(1024, 270);
@@ -8364,7 +8742,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W2
     glPointSize(10.0);
-    glColor3ub(4,27,40);
+    glColor3ub(4, 27, 40);
     glVertex2i(1028, 260);
     glVertex2i(1035, 260);
     glVertex2i(1035, 270);
@@ -8372,7 +8750,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W3
     glPointSize(10.0);
-    glColor3ub(248,190,25);
+    glColor3ub(248, 190, 25);
     glVertex2i(1038, 260);
     glVertex2i(1045, 260);
     glVertex2i(1045, 270);
@@ -8380,7 +8758,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W4
     glPointSize(10.0);
-    glColor3ub(4,27,40);
+    glColor3ub(4, 27, 40);
     glVertex2i(1048, 260);
     glVertex2i(1055, 260);
     glVertex2i(1055, 270);
@@ -8388,7 +8766,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W5
     glPointSize(10.0);
-    glColor3ub(4,27,40);
+    glColor3ub(4, 27, 40);
     glVertex2i(1018, 249);
     glVertex2i(1024, 249);
     glVertex2i(1024, 258);
@@ -8396,7 +8774,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W6
     glPointSize(10.0);
-    glColor3ub(248,190,25);
+    glColor3ub(248, 190, 25);
     glVertex2i(1028, 249);
     glVertex2i(1035, 249);
     glVertex2i(1035, 258);
@@ -8404,7 +8782,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W6
     glPointSize(10.0);
-    glColor3ub(4,27,40);
+    glColor3ub(4, 27, 40);
     glVertex2i(1038, 249);
     glVertex2i(1045, 249);
     glVertex2i(1045, 258);
@@ -8412,7 +8790,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W7
     glPointSize(10.0);
-    glColor3ub(4,27,40);
+    glColor3ub(4, 27, 40);
     glVertex2i(1038, 249);
     glVertex2i(1045, 249);
     glVertex2i(1045, 258);
@@ -8420,7 +8798,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //W8
     glPointSize(10.0);
-    glColor3ub(248,190,25);
+    glColor3ub(248, 190, 25);
     glVertex2i(1048, 249);
     glVertex2i(1055, 249);
     glVertex2i(1055, 258);
@@ -8429,14 +8807,14 @@ void NightTime()
     //uppper triangle
     glBegin(GL_TRIANGLES);
     glPointSize(10.0);
-    glColor3ub(112,182,228);
+    glColor3ub(112, 182, 228);
     glVertex2i(1010, 282);
     glVertex2i(1073, 282);
     glVertex2i(1053, 315);
     glEnd();
     glBegin(GL_QUADS); //deep border
     glPointSize(10.0);
-    glColor3ub(112,182,228);
+    glColor3ub(112, 182, 228);
     glVertex2i(1010, 282);
     glVertex2i(1072, 282);
     glVertex2i(1072, 288);
@@ -8445,14 +8823,14 @@ void NightTime()
 
     glBegin(GL_TRIANGLES);
     glPointSize(10.0);
-    glColor3ub(5,47,72);
+    glColor3ub(5, 47, 72);
     glVertex2i(1073, 282);
     glVertex2i(1097, 282);
     glVertex2i(1053, 315);
     glEnd();
     glBegin(GL_QUADS);
     glPointSize(10.0);
-    glColor3ub(5,47,72);
+    glColor3ub(5, 47, 72);
     glVertex2i(1074, 147);
     glVertex2i(1097, 147);
     glVertex2i(1097, 282);
@@ -8460,7 +8838,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w1
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1080, 262);
     glVertex2i(1085, 262);
     glVertex2i(1085, 273);
@@ -8468,7 +8846,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w2
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1088, 263);
     glVertex2i(1093, 263);
     glVertex2i(1093, 273);
@@ -8476,7 +8854,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w3
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1080, 249);
     glVertex2i(1085, 249);
     glVertex2i(1085, 258);
@@ -8484,7 +8862,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w4
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1088, 249);
     glVertex2i(1093, 249);
     glVertex2i(1093, 258);
@@ -8492,7 +8870,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w5
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1080, 232);
     glVertex2i(1085, 232);
     glVertex2i(1085, 244);
@@ -8500,7 +8878,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w6
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1088, 232);
     glVertex2i(1093, 232);
     glVertex2i(1093, 244);
@@ -8509,7 +8887,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w7
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1080, 216);
     glVertex2i(1085, 216);
     glVertex2i(1085, 228);
@@ -8517,7 +8895,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w8
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1088, 216);
     glVertex2i(1093, 216);
     glVertex2i(1093, 228);
@@ -8525,7 +8903,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w9
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1080, 204);
     glVertex2i(1085, 204);
     glVertex2i(1085, 213);
@@ -8533,7 +8911,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w10
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1088, 204);
     glVertex2i(1093, 204);
     glVertex2i(1093, 213);
@@ -8541,7 +8919,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w11
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1080, 188);
     glVertex2i(1085, 188);
     glVertex2i(1085, 198);
@@ -8549,7 +8927,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w12
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1088, 188);
     glVertex2i(1093, 188);
     glVertex2i(1093, 198);
@@ -8558,7 +8936,7 @@ void NightTime()
 
     glBegin(GL_QUADS); //w13
     glPointSize(10.0);
-    glColor3ub(244,190,32);
+    glColor3ub(244, 190, 32);
     glVertex2i(1080, 173);
     glVertex2i(1085, 173);
     glVertex2i(1085, 182);
@@ -8566,7 +8944,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w14
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1088, 173);
     glVertex2i(1093, 173);
     glVertex2i(1093, 182);
@@ -8574,7 +8952,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w15
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1080, 157);
     glVertex2i(1085, 157);
     glVertex2i(1085, 169);
@@ -8582,7 +8960,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //w16
     glPointSize(10.0);
-    glColor3ub(5,28,38);
+    glColor3ub(5, 28, 38);
     glVertex2i(1088, 157);
     glVertex2i(1093, 157);
     glVertex2i(1093, 169);
@@ -8591,7 +8969,7 @@ void NightTime()
     //5th building
     glBegin(GL_QUADS); //light part
     glPointSize(10.0);
-    glColor3ub(11,104,156);
+    glColor3ub(11, 104, 156);
     glVertex2i(1108, 147);
     glVertex2i(1158, 147);
     glVertex2i(1158, 267);
@@ -8599,7 +8977,7 @@ void NightTime()
     glEnd();
     glBegin(GL_QUADS); //deep part
     glPointSize(10.0);
-    glColor3ub(8,25,33);
+    glColor3ub(8, 25, 33);
     glVertex2i(1158, 147);
     glVertex2i(1186, 147);
     glVertex2i(1186, 300);
@@ -8702,11 +9080,11 @@ void myDisplay(void)
     BgBuildingNightTime();
     RoadFielNight();
     NightTime();
+    NightCar();
     glFlush();
     glutPostRedisplay();
     glutSwapBuffers();
 }
-
 
 void myInit(void)
 {
