@@ -4,7 +4,9 @@
 #include <math.h>
 float CloudX = 0;
 float CloudY = 0;
-int CloudStatus = 1;
+
+bool isDay = true;
+
 void DrawCircle(float cx, float cy, float r, int num_segments)
 {
 
@@ -132,17 +134,25 @@ void NightCloud()
 void moveCloud()
 
 {
-    if (CloudStatus == 1)
-    {
+
         CloudX += .3;
-    }
+
     if (CloudX > 1200)
     {
         CloudX = -200;
     }
+
     glPushMatrix();
     glTranslatef(CloudX, CloudY, 0);
-    NightCloud();
+    if (isDay)
+    {
+        DayCloud();
+    }
+    else
+    {
+        NightCloud();
+    }
+
     glPopMatrix();
 }
 void BgBuildingDayTime()
@@ -9072,15 +9082,54 @@ void NightTime()
     glVertex2i(1158, 152);
     glEnd();
 }
-void myDisplay(void)
+
+void keyboard(unsigned char key, int x, int y)
+
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    switch (key)
+    {
+    case 'd':
+        isDay = true;
+        break;
+    case 'n':
+        isDay = false;
+        break;
+
+    default:
+        break;
+    }
+}
+
+void Day()
+{
+    Daysky();
+    moveCloud();
+    BgBuildingDayTime();
+    RoadFieldDay();
+    DayTime();
+    DayCar();
+}
+
+void Night()
+{
     Nightsky();
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
     NightTime();
     NightCar();
+}
+
+void myDisplay(void)
+{
+    glClear(GL_COLOR_BUFFER_BIT);
+    if (isDay)
+    {
+        Day();
+    }else{
+        Night();
+    }
+    
     glFlush();
     glutPostRedisplay();
     glutSwapBuffers();
@@ -9102,6 +9151,7 @@ int main(int argc, char **argv)
     glutInitWindowPosition(100, 150);
     glutCreateWindow("OpenGL_Project_Group_2");
     glutDisplayFunc(myDisplay);
+    glutKeyboardFunc(keyboard);
     myInit();
     glutMainLoop();
 }
