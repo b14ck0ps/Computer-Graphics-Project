@@ -112,6 +112,26 @@ void moon()
     DrawCircle(960, 405, 30, 2000);
     glPopMatrix();
 }
+void coverTheSun()
+{
+    glColor3ub(219, 223, 226);
+    glBegin(GL_QUADS);
+    glVertex2i(730, 590);
+    glVertex2i(730, 130);
+    glVertex2i(860, 130);
+    glVertex2i(860, 590);
+    glEnd();
+}
+void coverThemoon()
+{
+    glColor3ub(0, 127, 179);
+    glBegin(GL_QUADS);
+    glVertex2i(710, 530);
+    glVertex2i(710, 130);
+    glVertex2i(1010, 130);
+    glVertex2i(1010, 530);
+    glEnd();
+}
 struct cloud
 {
     void drawDayCloud()
@@ -9327,6 +9347,8 @@ void Day()
     Daysky();
     sunRise();
     sunset();
+    if (rainday)
+        coverTheSun();
     moveCloud();
     BgBuildingDayTime();
     RoadFieldDay();
@@ -9340,6 +9362,8 @@ void Night()
     MoonRise();
     moonset();
     stars();
+    if (rainday)
+        coverThemoon();
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
