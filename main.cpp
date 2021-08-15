@@ -1720,7 +1720,7 @@ glEnd();*/
 void NightCar()
 {
     //car01
-    glColor3ub(199, 199, 193);
+    glColor3ub(121, 182, 231);
     glBegin(GL_QUADS);
     glVertex2i(104, 26);
     glVertex2i(196, 26);
@@ -1728,7 +1728,7 @@ void NightCar()
     glVertex2i(104, 90);
     glEnd();
 
-    glColor3ub(180, 204, 201);
+    glColor3ub(121, 182, 231);
     glBegin(GL_POLYGON);
     glVertex2i(196, 26);
     glVertex2i(226, 26);
@@ -1738,7 +1738,7 @@ void NightCar()
     glVertex2i(196, 85);
     glEnd();
 
-    glColor3ub(240, 109, 35);
+    glColor3ub(0, 137, 191);
     glBegin(GL_QUADS);
     glVertex2i(104, 32);
     glVertex2i(196, 32);
@@ -1766,7 +1766,7 @@ glEnd();
 */
 
     //car02
-    glColor3ub(215, 236, 240);
+    glColor3ub(4, 139, 182);
     glBegin(GL_POLYGON);
     glVertex2i(535, 82);
     glVertex2i(525, 82);
@@ -1781,7 +1781,7 @@ glEnd();
     glVertex2i(541, 106);
     glEnd();
 
-    glColor3ub(44, 136, 133); //car2 window 01
+    glColor3ub(6, 99, 157); //car2 window 01
     glBegin(GL_POLYGON);
     glVertex2i(546, 101);
     glVertex2i(541, 84);
@@ -1789,14 +1789,14 @@ glEnd();
     glVertex2i(561, 101);
     glEnd();
 
-    glColor3ub(23, 125, 117); //car2 window 01 Glitch
+    glColor3ub(0, 30, 45); //car2 window 01 Glitch
     glBegin(GL_TRIANGLES);
     glVertex2i(546, 101);
     glVertex2i(561, 84);
     glVertex2i(561, 101);
     glEnd();
 
-    glColor3ub(44, 136, 133); //car2 window 02
+    glColor3ub(6, 99, 157); //car2 window 02
     glBegin(GL_POLYGON);
     glVertex2i(565, 101);
     glVertex2i(565, 84);
@@ -1804,7 +1804,7 @@ glEnd();
     glVertex2i(580, 101);
     glEnd();
 
-    glColor3ub(23, 125, 117); //car2 window 02 Glitch
+    glColor3ub(0, 30, 45); //car2 window 02 Glitch
     glBegin(GL_TRIANGLES);
     glVertex2i(565, 101);
     glVertex2i(585, 84);
@@ -1812,7 +1812,7 @@ glEnd();
     glEnd();
 
     //car03
-    glColor3ub(28, 138, 141);
+    glColor3ub(6, 177, 213);
     glBegin(GL_POLYGON);
     glVertex2i(735, 22);
     glVertex2i(725, 22);
@@ -1827,7 +1827,7 @@ glEnd();
     glVertex2i(741, 46);
     glEnd();
 
-    glColor3ub(153, 200, 209); //car3 window 01
+    glColor3ub(0, 109, 157); //car3 window 01
     glBegin(GL_POLYGON);
     glVertex2i(746, 41);
     glVertex2i(741, 22);
@@ -1835,14 +1835,14 @@ glEnd();
     glVertex2i(761, 41);
     glEnd();
 
-    glColor3ub(132, 172, 176); //car3 window 01 Glitch
+    glColor3ub(9, 36, 43); //car3 window 01 Glitch
     glBegin(GL_TRIANGLES);
     glVertex2i(746, 41);
     glVertex2i(741, 22);
     glVertex2i(761, 41);
     glEnd();
 
-    glColor3ub(153, 200, 209); //car2 window 02
+    glColor3ub(0, 109, 157); //car3 window 02
     glBegin(GL_POLYGON);
     glVertex2i(765, 41);
     glVertex2i(765, 22);
@@ -1850,7 +1850,7 @@ glEnd();
     glVertex2i(779, 41);
     glEnd();
 
-    glColor3ub(132, 172, 176); //car3 window 02 Glitch
+    glColor3ub(9, 36, 43); //car3 window 02 Glitch
     glBegin(GL_TRIANGLES);
     glVertex2i(765, 41);
     glVertex2i(765, 22);
@@ -1858,7 +1858,7 @@ glEnd();
     glEnd();
 
     //car04
-    glColor3ub(238, 84, 59);
+    glColor3ub(79, 183, 223);
     glBegin(GL_POLYGON);
     glVertex2i(895, 22);
     glVertex2i(885, 22);
@@ -1876,7 +1876,7 @@ glEnd();
 glVertex2i(1200, 122);
 glEnd();*/
 
-    glColor3ub(219, 238, 243); //car4 window 01
+    glColor3ub(68, 112, 131); //car4 window 01
     glBegin(GL_POLYGON);
     glVertex2i(906, 41);
     glVertex2i(901, 22);
@@ -1884,14 +1884,14 @@ glEnd();*/
     glVertex2i(921, 41);
     glEnd();
 
-    glColor3ub(182, 190, 184); //car4 window 01 Glitch
+    glColor3ub(7, 18, 14); //car4 window 01 Glitch
     glBegin(GL_TRIANGLES);
     glVertex2i(906, 41);
     glVertex2i(901, 22);
     glVertex2i(921, 41);
     glEnd();
 
-    glColor3ub(219, 238, 243); //car4 window 02
+    glColor3ub(68, 112, 131); //car4 window 02
     glBegin(GL_POLYGON);
     glVertex2i(925, 41);
     glVertex2i(925, 22);
@@ -1899,7 +1899,7 @@ glEnd();*/
     glVertex2i(939, 41);
     glEnd();
 
-    glColor3ub(182, 190, 184); //car4 window 02 Glitch
+    glColor3ub(7, 18, 14); //car4 window 02 Glitch
     glBegin(GL_TRIANGLES);
     glVertex2i(925, 41);
     glVertex2i(925, 22);
@@ -9129,7 +9129,7 @@ void myDisplay(void)
     }else{
         Night();
     }
-    
+
     glFlush();
     glutPostRedisplay();
     glutSwapBuffers();
