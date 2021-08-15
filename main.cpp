@@ -3,6 +3,7 @@
 #include <GL/glut.h>
 #include <math.h>
 #include <iostream>
+#include <string.h>
 float CloudX = 0;
 float CloudY = 0;
 
@@ -34,7 +35,17 @@ void DrawCircle(float cx, float cy, float r, int num_segments)
     }
     glEnd();
 }
-
+void text(int x, int y, char *string)
+{
+    glColor3f(0.0, 0.0, 0.0);
+    glRasterPos2f(x, y);
+    int len, i;
+    len = (int)strlen(string);
+    for (i = 0; i < len; i++)
+    {
+        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, string[i]);
+    }
+}
 void Daysky()
 {
     ///---------------------Ajran-----------------------///
@@ -175,9 +186,9 @@ void stars()
     glPushMatrix();
     glBegin(GL_POINTS);
     glColor3ub(251, 163, 31);
-    glVertex2i(947,465);
-    glVertex2i(901,441);
-    glVertex2i(912,421);
+    glVertex2i(947, 465);
+    glVertex2i(901, 441);
+    glVertex2i(912, 421);
     glEnd();
     glPopMatrix();
 }
@@ -266,6 +277,7 @@ void sunRise()
     if (sunY > 290)
     {
         //std::cout << "working!";
+        text(50,580, "Press N to make Night");
         sunSitThere = true;
     }
     glPushMatrix();
@@ -304,6 +316,7 @@ void MoonRise()
     if (moonY > 290)
     {
         //std::cout << "working!";
+        text(50,560, "Press D to make Day");
         moonSitThere = true;
     }
     glPushMatrix();
