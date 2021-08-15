@@ -4,6 +4,7 @@
 #include <math.h>
 #include <iostream>
 #include <string.h>
+#include <stdlib.h>
 float CloudX = 0;
 float CloudY = 0;
 
@@ -12,14 +13,14 @@ float sunY = 0;
 
 float moonX = 0;
 float moonY = 0;
-
+float rain = 0.0;
 bool isDay = true;
 
 bool makeItNight = false;
 bool makeItDay = false;
 bool sunSitThere = false;
 bool moonSitThere = false;
-
+bool rainday = false;
 void DrawCircle(float cx, float cy, float r, int num_segments)
 {
 
@@ -44,6 +45,28 @@ void text(int x, int y, char *string)
     for (i = 0; i < len; i++)
     {
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, string[i]);
+    }
+}
+void Rain(int value)
+{
+
+    if (rainday)
+    {
+
+        rain += 0.01f;
+
+        glBegin(GL_POINTS);
+        for (int i = 1; i <= 10000; i++)
+        {
+            int x = rand(), y = rand();
+            x %= 2000;
+            y %= 2000;
+            glBegin(GL_LINES);
+            glColor3f(0.0, 1.0, 1.0);
+            glVertex2d(x, y);
+            glVertex2d(x + 5, y + 5);
+            glEnd();
+        }
     }
 }
 void Daysky()
@@ -9288,7 +9311,12 @@ void keyboard(unsigned char key, int x, int y)
         makeItDay = false;
         moonSitThere = false;
         break;
-
+    case 'r':
+        rainday = true;
+        break;
+    case 'f':
+        rainday = false;
+        break;
     default:
         break;
     }
@@ -9333,6 +9361,14 @@ void myDisplay(void)
     glFlush();
     glutPostRedisplay();
     glutSwapBuffers();
+    
+    glPushMatrix();
+    Rain(rain);
+    glutPostRedisplay();
+    glutTimerFunc(1, Rain, 0);
+    glFlush();
+    glPopMatrix();
+    
 }
 
 void myInit(void)
