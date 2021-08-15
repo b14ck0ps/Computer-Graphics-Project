@@ -81,7 +81,18 @@ void Daysky()
     glVertex2i(1200, 600);
     glEnd();
 }
-
+void EveningSky()
+{
+    ///sky block
+    glColor3ub(255, 137, 54);
+    glBegin(GL_QUADS);
+    glVertex2i(0, 145);
+    glVertex2i(1200, 145);
+    glColor3ub(219, 223, 226);
+    glVertex2i(1200, 600);
+    glVertex2i(0, 600);
+    glEnd();
+}
 void Nightsky()
 {
 
@@ -9345,6 +9356,9 @@ void keyboard(unsigned char key, int x, int y)
 void Day()
 {
     Daysky();
+    if (sunY < -60)
+        if (!rainday)
+            EveningSky();
     sunRise();
     sunset();
     if (rainday)
