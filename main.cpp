@@ -1771,6 +1771,15 @@ void BgBuildingNightTime()
 
     ///end
 }
+void wheel(int x, int y, int outer, int inner)
+{
+    glPushMatrix();
+    glColor3ub(0, 22, 51);
+    DrawCircle(x, y, outer, 2000);
+    glColor3ub(164, 199, 178);
+    DrawCircle(x, y, inner, 2000);
+    glPopMatrix();
+}
 void DayCar()
 {
     //car01
@@ -1808,6 +1817,11 @@ void DayCar()
     glVertex2i(218, 57);
     glVertex2i(206, 72);
     glEnd();
+
+    text(125, 53, "AMAZON");
+
+    wheel(123, 31, 8, 5);
+    wheel(175, 31, 8, 5);
 
     //Testing Github
 
@@ -1864,7 +1878,8 @@ glEnd();
     glVertex2i(585, 84);
     glVertex2i(580, 101);
     glEnd();
-
+    wheel(540, 74, 4, 2);
+    wheel(578, 74, 4, 2);
     //car03
     glColor3ub(28, 138, 141);
     glBegin(GL_POLYGON);
@@ -1910,6 +1925,8 @@ glEnd();
     glVertex2i(765, 22);
     glVertex2i(779, 41);
     glEnd();
+    wheel(740, 14, 4, 2);
+    wheel(788, 14, 4, 2);
 
     //car04
     glColor3ub(238, 84, 59);
@@ -1959,6 +1976,8 @@ glEnd();*/
     glVertex2i(925, 22);
     glVertex2i(939, 41);
     glEnd();
+    wheel(895, 16, 4, 2);
+    wheel(950, 16, 4, 2);
 }
 
 void NightCar()
@@ -1999,6 +2018,10 @@ void NightCar()
     glVertex2i(206, 72);
     glEnd();
 
+    text(125, 53, "AMAZON");
+
+    wheel(123, 31, 8, 5);
+    wheel(175, 31, 8, 5);
     //Testing Github
 
     /*
@@ -2054,6 +2077,8 @@ glEnd();
     glVertex2i(585, 84);
     glVertex2i(580, 101);
     glEnd();
+    wheel(540, 74, 4, 2);
+    wheel(578, 74, 4, 2);
 
     //car03
     glColor3ub(28, 138, 141);
@@ -2100,6 +2125,8 @@ glEnd();
     glVertex2i(765, 22);
     glVertex2i(779, 41);
     glEnd();
+    wheel(740, 14, 4, 2);
+    wheel(788, 14, 4, 2);
 
     //car04
     glColor3ub(238, 84, 59);
@@ -2149,6 +2176,8 @@ glEnd();*/
     glVertex2i(925, 22);
     glVertex2i(939, 41);
     glEnd();
+    wheel(895, 16, 4, 2);
+    wheel(950, 16, 4, 2);
 }
 
 void RoadFieldDay()
