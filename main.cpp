@@ -9333,14 +9333,20 @@ void keyboard(unsigned char key, int x, int y)
     switch (key)
     {
     case 'd':
-        makeItDay = true;
-        makeItNight = false;
-        sunSitThere = false;
+        if (moonSitThere)
+        {
+            makeItDay = true;
+            makeItNight = false;
+            sunSitThere = false;
+        }
         break;
     case 'n':
-        makeItNight = true;
-        makeItDay = false;
-        moonSitThere = false;
+        if (sunSitThere)
+        {
+            makeItNight = true;
+            makeItDay = false;
+            moonSitThere = false;
+        }
         break;
     case 'r':
         rainday = true;
