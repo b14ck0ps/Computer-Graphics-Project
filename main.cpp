@@ -300,7 +300,7 @@ void sunRise()
     if (sunY > 290)
     {
         //std::cout << "working!";
-        text(50,580, "Press N to make Night");
+        text(50, 580, "Press N to make Night");
         sunSitThere = true;
     }
     glPushMatrix();
@@ -339,7 +339,7 @@ void MoonRise()
     if (moonY > 290)
     {
         //std::cout << "working!";
-        text(50,560, "Press D to make Day");
+        text(50, 560, "Press D to make Day");
         moonSitThere = true;
     }
     glPushMatrix();
@@ -9361,14 +9361,13 @@ void myDisplay(void)
     glFlush();
     glutPostRedisplay();
     glutSwapBuffers();
-    
+
     glPushMatrix();
     Rain(rain);
     glutPostRedisplay();
     glutTimerFunc(1, Rain, 0);
     glFlush();
     glPopMatrix();
-    
 }
 
 void myInit(void)
