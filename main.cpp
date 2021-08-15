@@ -320,7 +320,7 @@ void sunRise()
     if (sunY > 290)
     {
         //std::cout << "working!";
-        text(50, 580, "Press N to make Night");
+        text(50, 560, "Press N to make Night");
         sunSitThere = true;
     }
     glPushMatrix();
@@ -9348,7 +9348,12 @@ void Day()
     sunRise();
     sunset();
     if (rainday)
+    {
         coverTheSun();
+        text(50, 580, "Press F to stop Rain");
+    }
+    else
+        text(50, 580, "Press R to start Rain");
     moveCloud();
     BgBuildingDayTime();
     RoadFieldDay();
@@ -9363,7 +9368,12 @@ void Night()
     moonset();
     stars();
     if (rainday)
+    {
         coverThemoon();
+        text(50, 580, "Press F to stop Rain");
+    }
+    else
+        text(50, 580, "Press R to start Rain");
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
