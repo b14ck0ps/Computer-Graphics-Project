@@ -1983,6 +1983,15 @@ glEnd();*/
 void NightCar()
 {
     //car01
+
+    glColor3ub(108, 100, 110); //head light
+    glBegin(GL_TRIANGLES);
+    glVertex2i(300, 40);
+    glVertex2i(300, 15);
+    glColor3ub(204, 169, 48);
+    glVertex2i(200, 40);
+    glEnd();
+
     glColor3ub(121, 182, 231);
     glBegin(GL_QUADS);
     glVertex2i(104, 26);
@@ -2033,6 +2042,14 @@ glEnd();
 */
 
     //car02
+    glColor3ub(108, 100, 110); //head light
+    glBegin(GL_TRIANGLES);
+    glVertex2i(472, 85);
+    glVertex2i(472, 70);
+    glColor3ub(204, 169, 48);
+    glVertex2i(540, 79);
+    glEnd();
+
     glColor3ub(4, 139, 182);
     glBegin(GL_POLYGON);
     glVertex2i(535, 82);
@@ -2081,6 +2098,14 @@ glEnd();
     wheel(578, 74, 4, 2);
 
     //car03
+    glColor3ub(108, 100, 110); //head light
+    glBegin(GL_TRIANGLES);
+    glVertex2i(860, 25);
+    glVertex2i(860, 10);
+    glColor3ub(204, 169, 48);
+    glVertex2i(785, 20);
+    glEnd();
+
     glColor3ub(6, 177, 213);
     glBegin(GL_POLYGON);
     glVertex2i(735, 22);
@@ -2129,6 +2154,14 @@ glEnd();
     wheel(788, 14, 4, 2);
 
     //car04
+    glColor3ub(108, 100, 110); //head light
+    glBegin(GL_TRIANGLES);
+    glVertex2i(1020, 25);
+    glVertex2i(1020, 10);
+    glColor3ub(204, 169, 48);
+    glVertex2i(950, 20);
+    glEnd();
+
     glColor3ub(79, 183, 223);
     glBegin(GL_POLYGON);
     glVertex2i(895, 22);
@@ -3563,7 +3596,7 @@ void DayTime()
     glVertex2i(430, 336);
     glEnd();
 
-    glBegin(GL_QUADS);///1st window
+    glBegin(GL_QUADS); ///1st window
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(436, 305);
@@ -3581,7 +3614,7 @@ void DayTime()
     glVertex2i(436, 318);
     glEnd();
 
-    glBegin(GL_QUADS);///2nd
+    glBegin(GL_QUADS); ///2nd
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(450, 305);
@@ -3599,7 +3632,7 @@ void DayTime()
     glVertex2i(450, 318);
     glEnd();
 
-    glBegin(GL_QUADS);///3rd
+    glBegin(GL_QUADS); ///3rd
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(465, 305);
@@ -3617,7 +3650,7 @@ void DayTime()
     glVertex2i(465, 318);
     glEnd();
 
-    glBegin(GL_QUADS);///1st bar
+    glBegin(GL_QUADS); ///1st bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(435, 299);
@@ -3626,7 +3659,7 @@ void DayTime()
     glVertex2i(435, 302);
     glEnd();
 
-    glBegin(GL_QUADS);///4th
+    glBegin(GL_QUADS); ///4th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(435, 265);
@@ -3644,7 +3677,7 @@ void DayTime()
     glVertex2i(435, 277);
     glEnd();
 
-    glBegin(GL_QUADS);///5th
+    glBegin(GL_QUADS); ///5th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(465, 265);
@@ -3662,7 +3695,7 @@ void DayTime()
     glVertex2i(465, 277);
     glEnd();
 
-    glBegin(GL_QUADS);///6th
+    glBegin(GL_QUADS); ///6th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(450, 265);
@@ -3680,7 +3713,7 @@ void DayTime()
     glVertex2i(450, 277);
     glEnd();
 
-    glBegin(GL_QUADS);///2nd bar
+    glBegin(GL_QUADS); ///2nd bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(435, 262);
@@ -3689,7 +3722,7 @@ void DayTime()
     glVertex2i(435, 259);
     glEnd();
 
-    glBegin(GL_QUADS);///7th
+    glBegin(GL_QUADS); ///7th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(435, 220);
@@ -3707,7 +3740,7 @@ void DayTime()
     glVertex2i(435, 233);
     glEnd();
 
-    glBegin(GL_QUADS);///8th
+    glBegin(GL_QUADS); ///8th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(450, 220);
@@ -3725,7 +3758,7 @@ void DayTime()
     glVertex2i(450, 233);
     glEnd();
 
-    glBegin(GL_QUADS);///9th
+    glBegin(GL_QUADS); ///9th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(465, 220);
@@ -3743,7 +3776,7 @@ void DayTime()
     glVertex2i(465, 233);
     glEnd();
 
-    glBegin(GL_QUADS);///3rd bar
+    glBegin(GL_QUADS); ///3rd bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(435, 214);
@@ -3752,7 +3785,7 @@ void DayTime()
     glVertex2i(435, 217);
     glEnd();
 
-    glBegin(GL_QUADS);///10th
+    glBegin(GL_QUADS); ///10th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(465, 175);
@@ -3770,7 +3803,7 @@ void DayTime()
     glVertex2i(465, 188);
     glEnd();
 
-    glBegin(GL_QUADS);///11th
+    glBegin(GL_QUADS); ///11th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(435, 175);
@@ -3788,7 +3821,7 @@ void DayTime()
     glVertex2i(435, 188);
     glEnd();
 
-    glBegin(GL_QUADS);///12th
+    glBegin(GL_QUADS); ///12th
     glPointSize(10.0);
     glColor3ub(255, 253, 241);
     glVertex2i(450, 175);
@@ -3806,7 +3839,7 @@ void DayTime()
     glVertex2i(450, 188);
     glEnd();
 
-    glBegin(GL_QUADS);///last bar
+    glBegin(GL_QUADS); ///last bar
     glPointSize(10.0);
     glColor3ub(0, 0, 0);
     glVertex2i(435, 170);
