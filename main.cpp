@@ -27,6 +27,7 @@ bool makeItDay = false;
 bool sunSitThere = false;
 bool moonSitThere = false;
 bool rainday = false;
+bool isRedlight = false;
 void wheel(int x, int y, int outer, int inner);
 void DrawCircle(float cx, float cy, float r, int num_segments)
 {
@@ -764,7 +765,8 @@ void moveCarLeft()
 
     glPopMatrix();
 }
-void vehicle(){
+void vehicle()
+{
     moveCarLeft();
     moveCarRight();
 }
@@ -803,7 +805,7 @@ void sunRise()
     if (sunY > 290)
     {
         //std::cout << "working!";
-        text(50, 560, "Press N to make Night");
+        text(50, 540, "Press N to make Night");
         sunSitThere = true;
     }
     glPushMatrix();
@@ -842,7 +844,7 @@ void MoonRise()
     if (moonY > 290)
     {
         //std::cout << "working!";
-        text(50, 560, "Press D to make Day");
+        text(50, 540, "Press D to make Day");
         moonSitThere = true;
     }
     glPushMatrix();
@@ -2252,7 +2254,55 @@ void wheel(int x, int y, int outer, int inner)
     DrawCircle(x, y, inner, 2000);
     glPopMatrix();
 }
+void trafficlights(int x, int y)
+{
+    glPushMatrix();
+    DrawCircle(x, y, 5, 2000);
+    glPopMatrix();
+}
+void trfficText()
+{
+    if (isRedlight)
+    {
+        text(50, 560, "Press G for Green Light");
+    }
+    else
+    {
+        text(50, 560, "Press S for Red Light");
+    }
+}
+void trafficlightStand()
+{
+    glColor3ub(0, 0, 0);
+    glBegin(GL_QUADS);
+    glVertex2i(600, 122);
+    glVertex2i(605, 122);
+    glVertex2i(605, 160);
+    glVertex2i(600, 160);
+    glEnd();
 
+    glBegin(GL_QUADS);
+    glVertex2i(595, 160);
+    glVertex2i(610, 160);
+    glVertex2i(610, 190);
+    glVertex2i(595, 190);
+    glEnd();
+
+    if (isRedlight)
+    {
+        glColor3ub(255, 0, 0);
+        trafficlights(602, 181);
+        glColor3ub(0, 80, 0);
+        trafficlights(602, 168);
+    }
+    else
+    {
+        glColor3ub(80, 0, 0);
+        trafficlights(602, 181);
+        glColor3ub(0, 255, 0);
+        trafficlights(602, 168);
+    }
+}
 void RoadFieldDay()
 {
     ///Green Field
@@ -9528,6 +9578,12 @@ void keyboard(unsigned char key, int x, int y)
     case 'f':
         rainday = false;
         break;
+    case 's':
+        isRedlight = true;
+        break;
+    case 'g':
+        isRedlight = false;
+        break;
     default:
         break;
     }
@@ -9548,30 +9604,34 @@ void Day()
     }
     else
         text(50, 580, "Press R to start Rain");
+    trfficText();
     moveCloud();
     BgBuildingDayTime();
     RoadFieldDay();
     DayTime();
+    trafficlightStand();
     vehicle();
 }
 
 void Night()
 {
     Nightsky();
+    trfficText();
     MoonRise();
     moonset();
     stars();
     if (rainday)
     {
         coverThemoon();
-        text(50, 580, "Press F to stop Rain");
+        text(50, 560, "Press F to stop Rain");
     }
     else
-        text(50, 580, "Press R to start Rain");
+        text(50, 560, "Press R to start Rain");
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
     NightTime();
+    trafficlightStand();
     vehicle();
 }
 
