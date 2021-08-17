@@ -721,7 +721,14 @@ void moveCarRight()
 
 {
     cars c;
-    CarX_R += .9;
+    if (isRedlight)
+    {
+        CarX_R += 0;
+    }
+    else
+    {
+        CarX_R += .9;
+    }
 
     if (CarX_R > 1200)
     {
@@ -745,7 +752,14 @@ void moveCarLeft()
 
 {
     cars c;
-    CarX_L -= .9;
+    if (isRedlight)
+    {
+        CarX_L += 0;
+    }
+    else
+    {
+        CarX_L -= .9;
+    }
 
     if (CarX_L < -650)
     {
