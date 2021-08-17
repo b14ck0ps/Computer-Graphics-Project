@@ -9942,10 +9942,10 @@ void Day()
     BgBuildingDayTime();
     RoadFieldDay();
     DayTime();
+    dayTree();
     trafficlightStand();
     vehicle();
-    dayLampPost();
-    dayTree();
+    dayLampPost();   
 }
 
 void Night()
@@ -9966,10 +9966,10 @@ void Night()
     BgBuildingNightTime();
     RoadFielNight();
     NightTime();
+    nightTree();
     trafficlightStand();
     vehicle();
     nightLampPost();
-    nightTree();
 }
 
 void myDisplay(void)
