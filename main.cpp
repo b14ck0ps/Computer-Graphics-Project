@@ -183,6 +183,8 @@ struct cloud
     }
 };
 
+
+
 struct LampPost
 {
     void drawdayLampPost()
@@ -260,7 +262,7 @@ struct LampPost
         glVertex2i(205,205);
         glEnd();
 
-        glColor3ub(246,225,98);
+        glColor3ub(255,207,88);
         glBegin(GL_QUADS);
         glVertex2i(204,204);
         glVertex2i(215,204);
@@ -2406,6 +2408,175 @@ void BgBuildingNightTime()
     glEnd();
 
     ///end
+}
+
+struct Tree
+{
+    void drawdayTree()
+    {
+        glColor3ub(78,148,45);
+        glBegin(GL_TRIANGLES);
+        glVertex2i(370,250);
+        glVertex2i(440,255);
+        glVertex2i(400,290);
+        glEnd();
+
+        glColor3ub(39,118,37);
+        glBegin(GL_TRIANGLES);
+        glVertex2i(375,272);
+        glVertex2i(432,268);
+        glVertex2i(405,297);
+        glEnd();
+
+        glColor3ub(78,148,45);
+        glBegin(GL_TRIANGLES);
+        glVertex2i(380,290);
+        glVertex2i(425,290);
+        glVertex2i(405,315);
+        glEnd();
+
+        glColor3ub(119,68,34);
+        glBegin(GL_QUADS);
+        glVertex2i(400,235);
+        glVertex2i(410,235);
+        glVertex2i(410,253);
+        glVertex2i(400,253);
+        glEnd();
+
+    }
+
+    void drawnightTree()
+    {
+        glColor3ub(26,77,132);
+        glBegin(GL_TRIANGLES);
+        glVertex2i(370,250);
+        glVertex2i(440,255);
+        glVertex2i(400,290);
+        glEnd();
+
+        glColor3ub(26,77,132);
+        glBegin(GL_TRIANGLES);
+        glVertex2i(375,272);
+        glVertex2i(432,268);
+        glVertex2i(405,297);
+        glEnd();
+
+        glColor3ub(26,77,132);
+        glBegin(GL_TRIANGLES);
+        glVertex2i(380,290);
+        glVertex2i(425,290);
+        glVertex2i(405,315);
+        glEnd();
+
+        glColor3ub(26,77,132);
+        glBegin(GL_QUADS);
+        glVertex2i(400,235);
+        glVertex2i(410,235);
+        glVertex2i(410,253);
+        glVertex2i(400,253);
+        glEnd();
+
+    }
+};
+
+void dayTree()
+{
+    Tree t;
+    glPushMatrix();
+    glTranslated(-100, -100, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(60, -95, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(80, -95, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(170, -110, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(270, -100, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(-300, -110, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(380, -100, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(400, -110, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(600, -100, 0);
+    t.drawdayTree();
+    glPopMatrix();
+
+}
+
+void nightTree()
+{
+
+    Tree t;
+    glPushMatrix();
+    glTranslated(-100, -100, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(60, -95, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(80, -95, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(170, -110, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(270, -100, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(-300, -110, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(380, -100, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(400, -110, 0);
+    t.drawnightTree();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslated(600, -100, 0);
+    t.drawnightTree();
+    glPopMatrix();
 }
 void wheel(int x, int y, int outer, int inner)
 {
@@ -9774,7 +9945,7 @@ void Day()
     trafficlightStand();
     vehicle();
     dayLampPost();
-
+    dayTree();
 }
 
 void Night()
@@ -9798,6 +9969,7 @@ void Night()
     trafficlightStand();
     vehicle();
     nightLampPost();
+    nightTree();
 }
 
 void myDisplay(void)
