@@ -9637,10 +9637,10 @@ void Night()
     if (rainday)
     {
         coverThemoon();
-        text(50, 560, "Press F to stop Rain");
+        text(50, 580, "Press F to stop Rain");
     }
     else
-        text(50, 560, "Press R to start Rain");
+        text(50, 580, "Press R to start Rain");
     moveCloud();
     BgBuildingNightTime();
     RoadFielNight();
