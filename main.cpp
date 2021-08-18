@@ -2476,6 +2476,17 @@ struct Tree
         glVertex2i(400,253);
         glEnd();
 
+        glPointSize(2);
+        glColor3ub(rand()%255,rand()%255,rand()%255);
+        glBegin(GL_POINTS);
+        glVertex2i(394,300);
+        glVertex2i(406,297);
+        glVertex2i(396,271);
+        glVertex2i(426,261);
+        glVertex2i(415,279);
+        glVertex2i(400,279);
+        glVertex2i(380,255);
+        glEnd();
     }
 };
 
